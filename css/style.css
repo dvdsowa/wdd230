@@ -16,4 +16,10 @@ header, main, footer {
 
 h1 {
     color: navy;
+    float: right;
+}
+
+img {
+    width: 300px;
+    float: left;
 }
