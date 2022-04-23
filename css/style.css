@@ -9,17 +9,29 @@ body {
 header, main, footer {
     max-width: 600px;
     margin: 0.5rem auto;
-    border: 1px solid #bbb;
     padding: 1rem;
-    background-color: #eee;
+}
+
+header {
+    border: 1px solid #bbbbbb;
+    background-color: #eeeeee;
+}
+
+img {    
+    width: 200px;
+    float: left;
 }
 
 h1 {
     color: navy;
     float: right;
+    align-items: center;
+    justify-content: center;
+    padding-left: 45px;
+    padding-top: 90px;
 }
 
-img {
-    width: 300px;
-    float: left;
+footer {
+    border: 1px solid #bbbbbb;
+    background-color: #eeeeee;
 }
