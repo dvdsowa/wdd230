@@ -4,6 +4,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    min-width: 300px;
 }
 
 header, main, footer {
@@ -34,4 +35,8 @@ h1 {
 footer {
     border: 1px solid #bbbbbb;
     background-color: #eeeeee;
+}
+
+#update {
+    padding-left: 60px;
 }
