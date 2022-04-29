@@ -1,0 +1,91 @@
+/* Refer to screenshots */
+/* two columns top half*/
+@media only screen and (min-width: 32.5em) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+    header {
+        font-size: 1.6rem;
+    }
+    
+    #visualHierarchy {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        margin-right: 15px;
+    }
+
+    #whiteSpaceAndClearDesign {
+        margin-top: 0px;
+        margin-left: 15px;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    #ruleOfThirds {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+
+    #mobileScreenShotVH, #mobileScreenShotWSACD {    
+        padding-left: 6.8px;
+    }
+
+    #mobileScreenShotROT {
+        padding-left: 15px;
+    }
+
+    #visualHierarchy, #whiteSpaceAndClearDesign, #ruleOfThirds {
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    #VH-title, #WSACD-title {
+        font-size: 1.5rem;
+        padding: 6.8px;
+        white-space: nowrap;
+    }
+
+    #ROT-title{
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+
+    #VH-organization, #WSACD-organization {
+        font-size: 1.05rem;
+        padding-left: 6.8px;
+    }
+
+    #ROT-organization {
+        font-size: 1.05rem;
+        padding-left: 15px;
+    }
+
+    #VH-link, #WSACD-link {
+        font-size: 1.05rem;
+        padding-left: 6.8px;
+    }
+
+    #ROT-link {
+        font-size: 1.05rem;
+        padding-left: 15px;
+    }
+
+    #VH-text, #WSACD-text {
+        font-size: 1.05rem;
+        padding-left: 6.8px;
+        padding-right: 6.8px;
+    }
+
+    #ROT-text {
+        font-size: 1.05rem;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    footer {
+        font-size: 0.95rem;
+        padding: 15px;
+    }
+  }
