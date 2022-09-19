@@ -1,0 +1,58 @@
+/* Refer to screenshots */
+/* three columns */
+@media only screen and (min-width: 50em) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    header {
+        font-size: 2rem;
+    }
+    
+    #whiteSpaceAndClearDesign {
+        margin-top: 0px;
+        margin-left: 7.5px;
+        margin-right: 7.5px;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    #ruleOfThirds {
+        margin-top: 0px;
+        margin-left: 15px;
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+
+    #mobileScreenShotROT {
+        padding-left: 6.8px;
+    }
+    
+    #VH-title, #WSACD-title, #ROT-title {
+        font-size: 1.5rem;
+        padding: 6.8px;
+        white-space: nowrap;
+    }
+
+    #VH-organization, #WSACD-organization, #ROT-organization {
+        font-size: 1.1rem;
+        padding-left: 6.8px;
+    }
+
+    #VH-link, #WSACD-link, #ROT-link {
+        font-size: 1.1rem;
+        padding-left: 6.8px;
+    }
+
+    #VH-text, #WSACD-text, #ROT-text {
+        font-size: 1.1rem;
+        padding-left: 6.8px;
+        padding-right: 6.8px;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+  }
