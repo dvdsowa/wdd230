@@ -167,7 +167,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(10, 1fr);
-    height: 130vh;
+    height: 1450px;
 }
 
 #body-typography .navigation {
@@ -201,7 +201,7 @@ nav a:hover {
 /* Target-Audience */
 
 #body-target-audience {
-    height: 251vh;
+    height: 2650px;
 }
 
 #body-target-audience ul {
@@ -254,7 +254,7 @@ nav a:hover {
 
 /* Index */
 #body-index {
-    height: 161vh;
+    height: 1700px;
     
 }
 
@@ -304,7 +304,7 @@ nav a:hover {
 /* Color Scheme */
 
 #body-color-scheme {
-    height: 55vh;
+    height: 600px;
     width: auto;
 }
 
