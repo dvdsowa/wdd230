@@ -13,24 +13,28 @@
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
     </head>
-    <body id="body-color-scheme">
-        <header class="navigation">
-            <h1 class="header-title">chamber of commerce website plan</h1>
-            <nav><ul>
-                <li><a href="https://dvdsowa.github.io/wdd230/lesson3/index.html" target="_blank">name and purpose</a></li>
-                <li><a href="https://dvdsowa.github.io/wdd230/lesson3/target-audience.html" target="_blank">target audience</a></li>
-                <li><a href="https://dvdsowa.github.io/wdd230/lesson3/color-scheme.html" target="_blank">color scheme</a></li>
-                <li><a href="https://dvdsowa.github.io/wdd230/lesson3/typography.html" target="_blank">typography</a></li>
-            </ul></nav>
-        </header>
-        <main id="main-color-scheme">
+    <body>
+        <header><h2>chamber of commerce website plan</h2></header>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+            <li><a href="https://dvdsowa.github.io/wdd230/lesson3/index.html" target="_blank">name and purpose</a></li>
+            <li><a href="https://dvdsowa.github.io/wdd230/lesson3/target-audience.html" target="_blank">target audience</a></li>
+            <li class="active"><a href="https://dvdsowa.github.io/wdd230/lesson3/color-scheme.html" target="_blank">color scheme</a></li>
+            <li><a href="https://dvdsowa.github.io/wdd230/lesson3/typography.html" target="_blank">typography</a></li>
+            </ul>
+        </nav>
+        <main>
             <!--Reference the elements/content to which the colors will apply-->
-            <section id="color-scheme">
-                <h1>Color Scheme</h1>
-                <table class="colors">
-                    <tr><th>Primary</th><th>Secondary</th><th>Accent 1</th><th>Accent 2</th><th>Accent 3</th></tr>
+            <section>
+                <h2 id="color-scheme">Color Scheme</h2>
+                <table>
+                    <tr><th>Primary</th><td class="primary">[#383E4B]</td></tr>
                     <!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
-                    <tr><td class="primary">[#383E4B]</td><td class="secondary">[#52647C]</td><td class="accent1">[#6E838D]</td><td class="accent2">[#8999A9]</td><td class="accent3">[#AEADB3]</td></tr>
+                    <tr><th>Secondary</th><td class="secondary">[#52647C]</td></tr>
+                    <tr><th>Accent 1</th><td class="accent1">[#6E838D]</td></tr>
+                    <tr><th>Accent 2</th><td class="accent2">[#8999A9]</td></tr>
+                    <tr><th>Accent 3</th><td class="accent3">[#AEADB3]</td></tr>
                 </table>
                 <!--The color scheme refers to the carefully selected site colors that reflect the organization's purpose and trademark 
                     colors. The planning document defines the color scheme through a color palette that labels color style definitions 
@@ -40,5 +44,6 @@
         <footer id="footer-color-scheme">
             &#169; <span id="copyrightyear"></span> .:|:. David Sowa .:|:. BYU-Idaho .:|:. <span id="update"></span>
         </footer>
+        <script src="js/scripts.js"></script>
     </body>
 </html>

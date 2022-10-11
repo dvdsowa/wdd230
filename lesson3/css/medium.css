@@ -1,8 +1,19 @@
 @media only screen and (min-width: 32.5em) {
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto auto auto;
-    }
     
+    #logo {
+        width: 50vh;
+
+    }
+
+    header {
+        font-size: 1.4em;
+    }
+
+    main {
+        padding: 2em;
+    }
+
+    main h1 {
+        font-size: 5em;
+    }
 }

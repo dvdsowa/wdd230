@@ -13,24 +13,25 @@
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
     </head>
-    <body id="body-typography">
-        <header class="navigation">
-            <h1 class="header-title">chamber of commerce website plan</h1>
-            <nav><ul>
-                <li><a href="https://dvdsowa.github.io/wdd230/lesson3/index.html" target="_blank">name and purpose</a></li>
-                <li><a href="https://dvdsowa.github.io/wdd230/lesson3/target-audience.html" target="_blank">target audience</a></li>
-                <li><a href="https://dvdsowa.github.io/wdd230/lesson3/color-scheme.html" target="_blank">color scheme</a></li>
-                <li><a href="https://dvdsowa.github.io/wdd230/lesson3/typography.html" target="_blank">typography</a></li>
-            </ul></nav>
-        </header>
+    <body>
+        <header><h2>chamber of commerce website plan</h2></header>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+            <li><a href="https://dvdsowa.github.io/wdd230/lesson3/index.html" target="_blank">name and purpose</a></li>
+            <li><a href="https://dvdsowa.github.io/wdd230/lesson3/target-audience.html" target="_blank">target audience</a></li>
+            <li><a href="https://dvdsowa.github.io/wdd230/lesson3/color-scheme.html" target="_blank">color scheme</a></li>
+            <li class="active"><a href="https://dvdsowa.github.io/wdd230/lesson3/typography.html" target="_blank">typography</a></li>
+            </ul>
+        </nav>
         <main id="main-typography">
             <!--Reference the elements/content to which the colors will apply-->
-            <section id="typography">
-                <h1 class="title">Typography</h1>
-                <h2 class="subtitle">Titles: Sorts Mill Goudy</h2>
-                <h2 class="subtitle">Headings: Raleway</h2>
-                <h2 class="subtitle">Paragraphs: Pridi</h2>
-                <p>This paring of fonts contrasts well and offers a slight literary touch, suggesting that the Thitherham Chamber of Commerce is established and reliable.</p>
+            <section>
+                <h1>Typography</h1>
+                <h2>Titles: Sorts Mill Goudy</h2>
+                <h2>Headings: Raleway</h2>
+                <h2>Paragraphs: Pridi</h2>
+                <p id="non-colored">This paring of fonts contrasts well and offers a slight literary touch, suggesting that the Thitherham Chamber of Commerce is established and reliable.</p>
                 <p class="colored">Dolorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <!--The typography section of the planning document provides examples of the fonts to be used and where they are to be 
                     applied. You may wish to combine this section with the color scheme section as your provide application references 
@@ -46,5 +47,6 @@
         <footer id="footer-typography">
             &#169; <span id="copyrightyear"></span> .:|:. David Sowa .:|:. BYU-Idaho .:|:. <span id="update"></span>
         </footer>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
