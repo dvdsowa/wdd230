@@ -7,45 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Page where lesson assignments for my WDD 230 class are posted.">
     <title>WDD 230: Assignment Portal</title>
-    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700&family=Noto+Sans&family=Pridi&family=Raleway&family=Ruda&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
     <header>
-            <span id="header-span-left"><img src="images/logo.png" alt="compass logo" id="header-logo"></span>
-            <h1>Thitherham<h2>Chamber Of Commerce</h2></h1>
-            <span id="header-span-right"><img src="images/facebook.png" alt="facebook logo" id="header-facebook">
+            <div id="header-span-left"><img src="images/logo.png" alt="compass logo" id="header-logo"></div>
+            <div id="header-span-center"><h1>Thitherham</h1><h2>Chamber Of Commerce</h2></div>
+            <div id="header-span-right"><img src="images/facebook.png" alt="facebook logo" id="header-facebook">
             <img src="images/instagram.png" alt="pinterest logo" id="header-pinterest">
-            </span>
+            </div>
     </header>
     <nav>
         <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
         <ul id="primaryNav">
-        <li class="active"><a href="https://dvdsowa.github.io/wdd230/chamber/" target="_blank">Central Node</a></li>
-        <li><a href="https://dvdsowa.github.io/wdd230/chamber/" target="_blank">Location</a></li>
+        <li class="active"><a href="https://dvdsowa.github.io/wdd230/chamber/" target="_blank">Home</a></li>
+        <li><a href="https://dvdsowa.github.io/wdd230/chamber/" target="_blank">Directory</a></li>
+        <li><a href="https://dvdsowa.github.io/wdd230/chamber/" target="_blank">Events</a></li>
         <li><a href="https://dvdsowa.github.io/wdd230/chamber/" target="_blank">Contact</a></li>
-        <li><a href="https://dvdsowa.github.io/wdd230/chamber/" target="_blank">Services</a></li>
-    </ul>
+        </ul>
     <p id="navigation-date"></p>
     </nav>
     <main>
-        <p>Hero with site name and call to action</p>
-        <p>News Release</p>
-        <p><span>Spotlight 1</span><span>Spotlight 2</span></p>
-        <p>Join</p>
-        <p>Event</p>
-        <p>Weather</p>
+        <p id="banner"></p>
+        <img src="images/hero.jpg" alt="Thitherham main street" id="hero">
+        <p class="greeting">Welcome to Thitherham</p>
+        <button id="joinBtn"><span>Join our Chamber</span></button>
+        <div>
+            <h2 id="news-title">Thitherham CoC 100-year Anniversary</h2>
+            <p id="news">100 years ago, the Thitherham Chamber of Commerce was conceived in the local convenience store. To mark the occassion,
+                the Thitherham CoC announces a 10% members discount on all TCoC anniversary tee-shirts.
+            </p>
+        </div>
+        <div id="highlights">
+            <section id="highlights-top">
+                <h2 id="spot1">Rhino Roofing</h2>
+                <p id="spot1-1">"Your roof will never leak again!"</p>
+                <p id="spot1-2">rhinoroofers@rhinoroofing.com</p>
+                <p id="spot1-3">+999-7598-92348 www.rhinoroofing.com</p>
+            </section>
+            <section id="highlights-bottom">
+                <h2 id="spot2">Framingfield Vineyard</h2>
+                <p id="spot2-1">"Grapes good enough for Caesar."</p>
+                <p id="spot2-2">FramVine@hotmails.com</p>
+                <p id="spot2-3">+999-9119-16549 www.framingfieldvineyard.com</p>
+            </section>
+        </div>
+        <div id="raffl">
+            <h2>Local Gift Card Raffle</h2>
+            <img src="images/qr-code.png" alt="qr code" id="qr">
+            <p id="raffle">On November 17, we will be holding a raffle. The 1st, 2nd and 3rd place winners will $500,
+                $300 and $150 prizes respectively. It will be hosted at 4th Street Tavern, 357 4th Street.
+            </p>
+        </div>
+        <div id="weathr">
+            <h2>Weather</h2>
+            <img src="images/weather.png" alt="sun and storm cloud" id="weather">
+            <p id="weather-p">Thitherham, Aliquobia<br> 19 °C | 78% Humidity <br> Sunny with a chance of showers </p>
+        </div>
     </main>
     <footer>
         <div id="footer-left">
         <img src="images/logo.png" alt="compass logo" id="footer-logo">
         <h3>Thitherham Chamber of Commerce</h3>
-        <p>100 Main Street, Thitherham, Patria, 0A01B</p>
+        <p>100 Main Street, Thitherham, Aliquobia, 0A01B</p>
         </div>
         <div id="footer-right">
             <p>info@thitherhamcoc.org</p>

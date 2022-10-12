@@ -1,23 +1,114 @@
 @media only screen and (min-width: 35rem) {
 
-
-    header h1 {
-        margin-top: 21px;
-        margin-left: 29.5%;
+    #header-logo {
+        width: 100px;
     }
 
-    header h2 {
-        min-width: 44%;
+    #header-facebook {
+        max-width: 55px;
+    }
+    
+    #header-pinterest {
+        max-width: 55px;
+    }
+    
+    #header-span-center{
+        font-size: 1.1em;
     }
 
-    #hamburgerBtn {
-        margin-left: 1.2em;
+    #header-span-left{
+        margin-right: 3vw;
+    }
+    
+    #header-span-right{
+        margin-top: 4.5vh;
+        margin-left: 3vw;
     }
 
-    main p span {
-        width: 97.8%;
+    #navigation-date {
+        font-size: 1.1em;
+    }
+    
+    body {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
+    #banner {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #hero {
+        max-width: 970px;
+        margin-bottom: -16.4em;
+    }
+
+    .greeting {
+        top: -29.5vh;
+        font-size: 3.5em;
+    }
+    
+    #joinBtn {
+        top: -6.5em;
+        font-size: 2em;
+    }
+
+    main div {
+        text-align: center;
+    }
+
+    #news {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #raffl {
+        display: flex;
+        flex-direction: column;
+        height: 305px;
+    }
+
+    #qr {
+        width: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #eee;
+    }
+
+    #raffle {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0px;
+        top: 0px;
+    }
+
+    #weathr {
+        display: flex;
+        flex-direction: column;
+        height: 305px;
+    }
+    
+    #weather {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #weather-p {
+        left: 0px;
+        top: 0px;
+        max-width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     #footer-bottom {
         text-align: center;
     }

@@ -3,8 +3,9 @@ const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
 const currentDateAndTime = new Date();
 const copyrightyear = document.querySelector('#copyrightyear');
 const thedatefooter = document.querySelector('#update');
-const thedatenav = document.querySelector('#navigation-date')
+const thedatenav = document.querySelector('#navigation-date');
 const lastmodification = document.lastModified;
+const banner = document.querySelector('#banner');
 
 let day = days[currentDateAndTime.getDay()];
 let day_number = currentDateAndTime.getDate();
@@ -14,7 +15,11 @@ let year_number = currentDateAndTime.getFullYear();
 copyrightyear.textContent = currentDateAndTime.getFullYear();
 // console.log("It is now " + currentDateAndTime);
 thedatenav.innerHTML = `${day}, ${day_number} ${month} ${year_number}`;
-thedatefooter.innerHTML = `Last Updated: ${lastmodification}`;
+thedatefooter.innerHTML = `Updated ${lastmodification}`;
+
+if (day = 'Monday' || 'Tuesday') {
+banner.innerHTML = `🤝🏼 Attend our meet-and-greet Wednesday at 7:00 p.m.`;
+}
 
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
