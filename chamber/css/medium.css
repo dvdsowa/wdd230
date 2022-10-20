@@ -42,17 +42,14 @@
     }
 
     #hero {
-        max-width: 970px;
-        margin-bottom: -16.4em;
+        max-width: 100%;
     }
 
     .greeting {
-        top: -29.5vh;
         font-size: 3.5em;
     }
     
     #joinBtn {
-        top: -6.5em;
         font-size: 2em;
     }
 

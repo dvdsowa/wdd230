@@ -31,12 +31,12 @@
     }
 
     #header-span-left{
-        margin-right: 670px;
+        margin-right: 2vw;
     }
     
     #header-span-right{
         margin-top: 5.5vh;
-        margin-left: 670px;
+        margin-left: 2vw;
     }
 
     header h2 {
@@ -48,25 +48,29 @@
     }
 
     body {
-        max-width: 1920px;
+        width: 100%;
+        max-width: 2000px;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
 
+    main div {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     #hero {
-        max-width: 1920px;
-        margin-bottom: -28.6em;
+        width: 100%;
+        max-width: 2000px;
     }
 
     .greeting {
-        top: -59vh;
-        font-size: 7em;
+        font-size: 5em;
     }
     
     #joinBtn {
-        top: -10.6em;
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     main div h2 {

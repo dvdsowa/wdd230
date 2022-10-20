@@ -17,10 +17,10 @@
 </head>
 <body>
     <header>
-            <div id="header-span-left"><img src="images/logo.png" alt="compass logo" id="header-logo"></div>
+            <div id="header-span-left"><img src="images/logowp.webp" alt="compass logo" id="header-logo"></div>
             <div id="header-span-center"><h1>Thitherham</h1><h2>Chamber Of Commerce</h2></div>
-            <div id="header-span-right"><img src="images/facebook.png" alt="facebook logo" id="header-facebook">
-            <img src="images/instagram.png" alt="pinterest logo" id="header-pinterest">
+            <div id="header-span-right"><img src="images/facebook-min.png" alt="facebook logo" id="header-facebook">
+            <img src="images/instagram-min.png" alt="pinterest logo" id="header-pinterest">
             </div>
     </header>
     <nav>
@@ -35,10 +35,19 @@
     </nav>
     <main>
         <p id="banner"></p>
-        <img src="images/hero.jpg" alt="Thitherham main street" id="hero">
-        <p class="greeting">Welcome to Thitherham</p>
-        <button id="joinBtn"><span>Join our Chamber</span></button>
-        <div>
+        <figure>
+            <figcaption>
+                <p class="greeting">Welcome to Thitherham</p>
+                <button id="joinBtn"><span>Join our Chamber</span></button>
+            </figcaption>
+            <img src="images/wdd230-org643x429.jpg" sizes="100vw" alt="Thitherham main street" id="hero"
+            srcset="images/wdd230-org643x429.jpg 600w, 
+            images/wdd230-org964x643.jpg 900w, 
+            images/wdd230-org1608x1072.jpg 1600w
+            "
+            >
+        </figure>
+        <div id="news-div">
             <h2 id="news-title">Thitherham CoC 100-year Anniversary</h2>
             <p id="news">100 years ago, the Thitherham Chamber of Commerce was conceived in the local convenience store. To mark the occassion,
                 the Thitherham CoC announces a 10% members discount on all TCoC anniversary tee-shirts.
@@ -60,30 +69,31 @@
         </div>
         <div id="raffl">
             <h2>Local Gift Card Raffle</h2>
-            <img src="images/qr-code.png" alt="qr code" id="qr">
+            <img src="images/qr-code-min.png" alt="qr code" id="qr">
             <p id="raffle">On November 17, we will be holding a raffle. The 1st, 2nd and 3rd place winners will $500,
                 $300 and $150 prizes respectively. It will be hosted at 4th Street Tavern, 357 4th Street.
             </p>
         </div>
         <div id="weathr">
             <h2>Weather</h2>
-            <img src="images/weather.png" alt="sun and storm cloud" id="weather">
-            <p id="weather-p">Thitherham, Aliquobia<br> 19 °C | 78% Humidity <br> Sunny with a chance of showers </p>
+            <img src="images/weather-min.png" alt="sun and storm cloud" id="weather">
+            <p id="weather-p">Thitherham, Aliquobia<br> 19 °C | 78% Humidity <br> Sunny with a chance of showers <br><span id="windchill"></span></p>
         </div>
     </main>
     <footer>
         <div id="footer-left">
-        <img src="images/logo.png" alt="compass logo" id="footer-logo">
+        <img src="images/logowp.webp" alt="compass logo" id="footer-logo">
         <h3>Thitherham Chamber of Commerce</h3>
         <p>100 Main Street, Thitherham, Aliquobia, 0A01B</p>
         </div>
         <div id="footer-right">
             <p>info@thitherhamcoc.org</p>
             <p>+(123) 555-6789</p>
-            <p class="end"><img src="images/location.png" alt="pin icon" id="footer-pin"> Location Map</p>
+            <p class="end"><img src="images/location-min.png" alt="pin icon" id="footer-pin"> Location Map</p>
         </div>
         <p id="footer-bottom">&copy; <span id="copyrightyear"></span> &bull; Thitherham CoC &bull; <span id="author">David Sowa</span> &bull; WDD 230 Project &bull; <span id="update"></span></p>
     </footer>
     <script src="js/scripts.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 </html>

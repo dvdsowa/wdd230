@@ -89,13 +89,11 @@ header h1, header h2 {
 
 #header-span-left {
     margin-top: 1vh;
-    margin-left: 1vw;
     padding-right: 2em;
 }
 
 #header-span-right {
     margin-top: 4vh;
-    margin-right: 1vw;
     padding-left: 2em;
 }
 
@@ -108,9 +106,9 @@ header h2 {
 }
 
 .greeting {
-    position: relative;
     text-align: center;
-    top: -14vh;
+    margin-top: auto;
+    margin-bottom: auto;
     font-family: var(--title-font);
     font-size: 1.8em;
     color: #fff;
@@ -131,22 +129,30 @@ header h2 {
 }
 
 #hero {
-    position: relative;
-    display: block;
-    max-width: 515px;
-    margin-top: -0.8em;
-    margin-bottom: -9.3em;
+    width: 100%;
     padding: 1em;
     border-radius: 25px;
+    grid-row: 1 / 2;
+    grid-column: 1 / 1;
+}
+
+main figure figcaption {
+    position: relative;
+    grid-row: 1 / 2;
+    grid-column: 1 / 1;
+    margin-top: 30%;
+}
+
+main figure {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 }
 
 #joinBtn {
     background-color: rgba(85,82,124,.95);
-    top: -5em;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+    margin: auto auto auto auto;
     padding: 0.5em;
     border-radius: 5px;
     border-width: 1px;
@@ -195,20 +201,6 @@ main div {
     font-weight: 200;
     font-style: normal;
     height: 200px;
-}
-
-main div span {
-    border-radius: 5px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgba(211,211,211, 0.4);
-    height: 80px;
-    margin-right: 1em;
-    padding-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 1em;
-    display: flex;
 }
 
 #news {
