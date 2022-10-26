@@ -1,0 +1,94 @@
+@media only screen and (min-width: 35rem) {
+
+    #header-logo {
+        width: 100px;
+    }
+
+    #header-facebook {
+        max-width: 55px;
+    }
+    
+    #header-pinterest {
+        max-width: 55px;
+    }
+    
+    #header-span-center{
+        font-size: 1.1em;
+    }
+
+    #header-span-left{
+        margin-right: 3vw;
+    }
+    
+    #header-span-right{
+        margin-top: 4.5vh;
+        margin-left: 3vw;
+    }
+
+    #navigation-date {
+        font-size: 1.1em;
+    }
+    
+    body {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main div {
+        text-align: center;
+    }
+
+    #news {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #raffl {
+        display: flex;
+        flex-direction: column;
+        height: 305px;
+    }
+    
+    #footer-bottom {
+        text-align: center;
+    }
+
+    footer {
+        text-align: left;
+        height: 185px;
+    }
+
+    #footer-logo {
+        text-align: left;
+        padding-left: 1em;
+    }
+
+    footer h3 {
+        text-align: left;
+        font-size: 1.5em;
+        padding-left: 1em;
+        margin-top: -85px;
+        margin-left: 110px;
+    }
+
+    #footer-left p {
+        font-size: 1em;
+        text-align: left;
+        padding-left: 2.25em;
+        margin-left: 100px;
+    }
+
+    #footer-right p {
+        font-size: 1em;
+        text-align: right;
+        padding-right: 1.7em;
+        margin-top: -35px;
+    }
+
+    #footer-right .end {
+        margin-top: 31px;
+        padding-bottom: 2.3em;
+    }
+}
