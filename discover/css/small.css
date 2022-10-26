@@ -105,6 +105,10 @@ header h2 {
     font-size: 1.4em;
 }
 
+main figure img {
+    width: 100%;
+}
+
 main figure figcaption {
     position: relative;
     grid-row: 1 / 2;
