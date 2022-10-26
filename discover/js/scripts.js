@@ -11,7 +11,15 @@ let day = days[currentDateAndTime.getDay()];
 let day_number = currentDateAndTime.getDate();
 let month = months[currentDateAndTime.getMonth()];
 let year_number = currentDateAndTime.getFullYear();
-todayDisplay.textContent = day_number;
+
+//days between
+let date1 = new Date();
+let date2 = Number(window.localStorage("lastvisit"));
+window.localStorage.setItem("lastvisit", date2);
+let difference = date1.getTime() - date2.getTime();
+let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
+todayDisplay.innerHTML = `Days since last visit: ${TotalDays}`;
+
 copyrightyear.textContent = currentDateAndTime.getFullYear();
 // console.log("It is now " + currentDateAndTime);
 thedatenav.innerHTML = `${day}, ${day_number} ${month} ${year_number}`;
