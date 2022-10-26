@@ -13,10 +13,10 @@ let month = months[currentDateAndTime.getMonth()];
 let year_number = currentDateAndTime.getFullYear();
 
 //days between
-let date1 = new Date();
-let date2 = Number(window.localStorage("lastvisit"));
-window.localStorage.setItem("lastvisit", date2);
-let difference = date1.getTime() - date2.getTime();
+let today = new Date().getTime();
+let lastvisit = Number(window.localStorage.getItem("lastvisit"));
+window.localStorage.setItem("lastvisit", today);
+let difference = today - lastvisit;
 let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
 todayDisplay.innerHTML = `Days since last visit: ${TotalDays}`;
 
