@@ -1,7 +1,7 @@
 // Initialize elements and some variables
 const currentDateAndTime = new Date();
 const copyrightyear = document.querySelector('#copyrightyear');
-const thedate = document.querySelector('#update');
+const thedate = document.querySelector('#lastModified');
 const total = document.querySelector('#total');
 const lastmodification = document.lastModified;
 

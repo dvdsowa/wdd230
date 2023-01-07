@@ -1,0 +1,87 @@
+/* Body */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+    /* 1 Navigation 1 */
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Raleway', sans-serif;
+        background-color: navy;
+        color: white;
+        padding: 1rem 0rem 1rem 0rem;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+    }
+
+    /* 2 Header 2 */
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: lightgoldenrodyellow;
+    }
+
+    header img {    
+        width: 100px;
+        margin: auto;
+        padding-top: 1rem;
+    }
+
+    header h1 {
+        color: chocolate;
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.5rem;
+        margin: auto;
+        padding: 0.5rem;
+    }
+
+    /* 3 Main 3 */
+    main {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.5rem;
+        max-width: 760px;
+        margin: auto;
+    }
+
+    main h2 {
+        font-family: serif;
+        font-size: 2rem;
+        margin: auto;
+        padding: 2rem;
+    }
+
+    main section {
+        background-color: #eeeeee;
+        border: 1px solid #bbbbbb;
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    main section ul.no-bullets {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    /* 4 Footer 4 */
+    footer {
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        flex-direction: column;
+        background-color: navy;
+        color: white;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    footer p {
+        margin: auto;
+    }
