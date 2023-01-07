@@ -1,0 +1,21 @@
+@media only screen and (min-width: 36rem) {
+    
+/* HTML */
+    /* Body */
+        /* 1 Header */
+        header 
+            {font-size: 1.5em;}
+        /* 2 Main */
+        main h1 
+            {font-size: 2.7em;}
+        main h4
+            {margin: none;
+             text-align: center;}
+        main #wireframes 
+            {padding-top: 0.1rem;
+             text-align: center;}
+        main img
+            {width: auto;}
+        /* 3 Footer */
+
+}

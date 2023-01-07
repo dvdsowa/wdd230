@@ -1,0 +1,118 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Schema */
+:root {
+            /* Palette */
+            --primary-color: #383E4B;
+            --secondary-color: #52647C;
+            --accent1-color: #6E838D;
+            --accent2-color: #8999A9;
+            --accent3-color: #AEADB3;
+
+            --page-background: #2B303A;
+            --page-background-layer2: #e6e6e6;
+            --headline-color-on-white: #902625;
+            --headline-color-on-color: #AEADB3;
+            --subtitle-color-on-white: #383E4B;
+            --paragraph-color-on-white: #111111;
+            --paragraph-color-on-color: #D3D3D3;
+            --text-background-color: #52647C;
+            --header-title: #383E4B;
+            --header-background-color: #aaaaaf;
+            --nav-link-color: #e3ab57;
+            --nav-background-color: #214946;
+            --nav-paragraph-background-color: rgba(0,0,0,0.3);
+            --nav-paragraph-color: rgba(255, 255, 255, 75%);
+
+            /* Fonts */
+            --title-font: "Sorts Mill Goudy", sans-serif;
+            --heading-font: "Raleway", sans-serif;
+            --paragraph-font: "Pridi", serif;
+      }
+
+/* HTML */
+html
+   {background-color: var(--page-background);}
+
+    /* Body */
+    body
+       {background-color: var(--page-background-layer2);}
+
+        /* 1 Header */
+        header
+           {width: 100%;
+            display: inline-block;
+            color: var(--paragraph-color-on-color);
+            background-color: var(--header-background-color);
+            font-size: 1.4em;}
+        header h2
+           {color: var(--header-title);
+            font-family: "Ruda", sans-serif;
+            font-variant: small-caps;
+            text-align: center;}
+
+        /* 2 Main */
+        main
+           {padding: 1rem;}
+        main h1
+           {font-family: var(--title-font);
+            color: var(--headline-color-on-white);
+            font-size: 2.4em;
+            font-weight: normal;}
+        main h3
+           {font-family: var(--heading-font);
+            color: var(--subtitle-color-on-white);
+            font-style: oblique;
+            font-weight: 100;}
+        main h4 
+           {font-family: var(--heading-font);
+            margin: 1rem;}
+        main p
+           {font-family: var(--paragraph-font);
+            color: var(--paragraph-color-on-white);
+            font-size: 1.1em;
+            font-style: normal;}
+        main .colored-paragraph
+           {padding: 1rem;
+            border-radius: 5px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #383E4B;
+            color: var(--paragraph-color-on-color);
+            background-color: var(--text-background-color);}
+        main ul
+           {list-style-type: none;}
+        main table th
+           {border: 1px solid black;
+            border-collapse: collapse;
+            background-color: #aaa;}
+        main table .primary
+           {color: #ccc;
+            background-color: #383E4B;
+            padding: 1em;}
+        main table .secondary
+           {background-color: #52647C;
+            padding: 1em;}
+        main table .accent1
+           {background-color: #6E838D;
+            padding: 1em;}
+        main table .accent2
+           {background-color: #8999A9;
+            padding: 1em;}
+        main table .accent3
+           {background-color: #AEADB3;
+            padding: 1em;}
+        main img
+           {width: 100%;
+            padding: 1rem;}
+            
+        /* 3 Footer */
+        footer
+           {color: rgba(255, 255, 255, 75%);
+            background-color: var(--nav-background-color);
+            text-align: center;
+            padding: 1rem;}
