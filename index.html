@@ -19,16 +19,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
 </head>
 
 <body>
     <nav>
-        <span class="material-symbols-outlined">
-            menu
-            </span>
-        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-        <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
+        <ul class="menu">
+            <li title="menu">
+                <a href="#" id="menu-button">≡</a>
+            </li>
+            <li title="home">
+                <a class="active menu-item" href="#" target="_blank">Home</a>
+            </li>
+            <li title="linkedin">
+                <a class="menu-item" href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            </li>
+            <li title="facebook">
+                <a class="menu-item" href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
+            </li>
+            <li title="facebook">
+                <button id="mode" class="menu-item" onclick="darkMode()">☑️ Toggle dark mode</button>
+            </li>
+        </ul>
     </nav>
     <header>
         <img src="images/optimized-david-sowa.jpg" alt="Smiling male face in front of a grassy lawn.">
@@ -58,6 +70,8 @@
         <p class="highlight" id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/darkMode.js"></script>
 </body>
 
 </html>

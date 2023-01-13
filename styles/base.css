@@ -1,13 +1,16 @@
 /* Body */
-body {
-    display: flex;
+body 
+   {display: flex;
     flex-direction: column;
-    height: 100vh;
-}
+    height: 100vh;}
+/* Dark Mode*/
+    .dark-mode 
+       {background-color: black;
+        color: white;}
 
     /* 1 Navigation 1 */
-    nav {
-        width: 100%;
+    nav 
+       {width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -15,74 +18,115 @@ body {
         font-family: 'Raleway', sans-serif;
         background-color: navy;
         color: white;
-        padding: 1rem 0rem 1rem 0rem;
-    }
-
-    nav a {
-        text-decoration: none;
-        color: white;
-    }
+        padding: 1rem 0rem 2rem 0rem;}
+    nav a 
+       {text-decoration: none;
+        color: white;}
+        
+       /* 1.1 Menu 1.1 */
+       .menu {
+        position: fixed;
+        top: 0;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background: #f7f7f7;
+        z-index: 10;
+        overflow: hidden;
+        box-shadow: 2px 0 20px rgba(0, 0, 0, 0.26);
+        }
+        .menu li a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            width: 10rem;
+            padding: 0.9rem;
+            color: #72739f;
+            position: relative;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            transition: background 0.5s ease-in-out;
+            margin-right: 0;
+        }
+        .menu li button {
+            text-align: center;
+            padding: 0.3rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        .menu li a:hover,
+        .menu li:first-child a {
+            background: #267fdd;
+            color: #fff;
+        }
+        li a.menu-item {
+            display: none;
+        }
+        li a.open {
+            display: flex;
+        }
+        li button.menu-item {
+            display: none;
+        }
+        li button.open {
+            display: flex;
+        }
+        .close::before {
+            content: "❌ ";
+        }
+        .active {
+            background-color: rgba(0,0,0,0.1);
+            font-weight: 700;
+        }
 
     /* 2 Header 2 */
-    header {
-        display: flex;
+    header 
+       {display: flex;
         flex-direction: column;
         width: 100%;
-        background-color: lightgoldenrodyellow;
-    }
-
-    header img {    
-        width: 100px;
+        background-color: lightgoldenrodyellow;}
+    header img 
+       {width: 100px;
         margin: auto;
-        padding-top: 1rem;
-    }
-
-    header h1 {
-        color: chocolate;
+        padding-top: 1rem;}
+    header h1 
+       {color: chocolate;
         font-family: 'Raleway', sans-serif;
         font-size: 2.5rem;
         margin: auto;
-        padding: 0.5rem;
-    }
+        padding: 0.5rem;}
 
     /* 3 Main 3 */
-    main {
-        font-family: 'Raleway', sans-serif;
+    main 
+       {font-family: 'Raleway', sans-serif;
         font-size: 1.5rem;
         max-width: 760px;
-        margin: auto;
-    }
-
-    main h2 {
-        font-family: serif;
+        margin: auto;}
+    main h2 
+       {font-family: serif;
         font-size: 2rem;
         margin: auto;
-        padding: 2rem;
-    }
-
-    main section {
-        background-color: #eeeeee;
+        padding: 2rem;}
+    main section 
+       {background-color: #eeeeee;
         border: 1px solid #bbbbbb;
         padding-left: 1rem;
         padding-right: 1rem;
-        margin-bottom: 1rem;
-    }
-    main section ul.no-bullets {
-        list-style-type: none;
-        padding-left: 0;
-    }
+        margin-bottom: 1rem;}
+    main section ul.no-bullets 
+       {list-style-type: none;
+        padding-left: 0;}
 
     /* 4 Footer 4 */
-    footer {
-        font-family: 'Raleway', sans-serif;
+    footer 
+       {font-family: 'Raleway', sans-serif;
         display: flex;
         flex-direction: column;
         background-color: navy;
         color: white;
         width: 100%;
         padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-    footer p {
-        margin: auto;
-    }
+        padding-bottom: 1rem;}
+    footer p 
+       {margin: auto;}
