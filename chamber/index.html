@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page for a ficticious chamber of commerce for my WDD 230 class.">
+    <meta name="author" content="David Sowa">
+    <meta property="og:title" content="Granbury Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/f/f6/Granbury_June_2018_35_%28Hood_County_Courthouse%29.jpg">
+    <meta property="og:url" content="https://dvdsowa.github.io/wdd230/chamber/">
+    <title>Granbury Chamber of Commerce Home</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700&family=Noto+Sans&family=Pridi&family=Raleway&family=Ruda&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/largest.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav" title="menu">
+                    <li class="active" title="home">
+                        <a href="https://dvdsowa.github.io/wdd230/chamber/" target="_blank">Home</a>
+                    </li>
+                    <li title="discover">
+                        <a href="#" target="_blank">Discover</a>
+                    </li>
+                    <li title="directory">
+                        <a href="#" target="_blank">Directory</a>
+                    </li>
+                    <li title="join">
+                        <a href="#" target="_blank">Join</a>
+                    </li>
+                </ul>
+            <p id="navigation-date"></p>
+        </nav>
+        <section>
+            <img src="images/logowp.webp" alt="compass logo" id="header-logo">
+            <h1>Granbury Chamber Of Commerce</h1>
+            <div class="social-media">
+                <img src="images/facebook-min.png" alt="facebook logo" id="header-facebook">
+                <img src="images/instagram-min.png" alt="pinterest logo" id="header-pinterest">
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <p id="banner"></p>
+
+        <figure>
+            <figcaption>
+                <p>Welcome to Granbury</p>
+                <button id="joinBtn">Join our Chamber</button>
+            </figcaption>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Granbury_June_2018_35_%28Hood_County_Courthouse%29.jpg" alt="Granbury courthouse">
+        </figure>
+
+        <div title="news" id="news">
+            <h2>Granbury ChoC 100-year Anniversary</h2>
+            <p>100 years ago, the Granbury Chamber of Commerce was conceived in the local convenience store. To mark the occassion,
+                the Granbury ChoC announces a 10% members discount on all GChoC anniversary tee-shirts.
+            </p>
+        </div>
+
+        <section title="highlights">
+            <div>
+                <h2>Rhino Roofing</h2>
+                <p>"Your roof will never leak again!"<br>rhinoroofers@rhinoroofing.com<br>+999-7598-92348 www.rhinoroofing.com</p>
+            </div>
+            <div>
+                <h2>Framingfield Vineyard</h2>
+                <p>"Grapes good enough for Caesar."<br>FramVine@hotmails.com<br>+999-9119-16549 www.framingfieldvineyard.com</p>
+            </div>
+        </section>
+
+        <div title="raffle" id="raffle">
+            <h2>Local Gift Card Raffle</h2>
+            <img src="images/qr-code-min.png" alt="qr code">
+            <p>On November 17, we will be holding a raffle. The 1st, 2nd and 3rd place winners will $500,
+                $300 and $150 prizes respectively. It will be hosted at 4th Street Tavern, 357 4th Street.
+            </p>
+        </div>
+
+        <div title="weather" id="weather">
+            <h2>Weather</h2>
+            <img src="images/weather-min.png" alt="sun and storm cloud">
+            <p>Granbury, Texas<br> 19 °C | 78% Humidity <br> Sunny with a chance of showers <br><span id="windchill"></span></p>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <img src="images/logowp.webp" alt="compass logo" id="footer-logo">
+            <h3>Granbury Chamber of Commerce</h3>
+            <p class="address"><em>100 Main Street, Granbury, Texas, 76048</em><br class="normal">info@granburychoc.org<br>+(123) 555-6789<br><img src="images/location-min.png" alt="pin icon" id="footer-pin"> Location Map</p>
+        </div>
+        <p id="footer-bottom">&copy; <span id="copyrightyear"></span> &bull; <span id="author">David Sowa</span> &bull; WDD 230 Project &bull; <span id="update"></span></p>
+    </footer>
+    <script src="scripts/dates.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>

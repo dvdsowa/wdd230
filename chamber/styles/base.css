@@ -1,0 +1,181 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html       {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+         * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+           /* Schema of Colors and Fonts */
+:root      {--primary-color: #383E4B;
+            --secondary-color: #52647C;
+            --accent1-color: #6E838D;
+            --accent2-color: #8999A9;
+            --accent3-color: #AEADB3;
+
+            --page-background: #2B303A;
+            --page-background-layer2: #e6e6e6;
+            --headline-color-on-white: #902625;
+            --headline-color-on-color: #AEADB3;
+            --subtitle-color-on-white: #383E4B;
+            --paragraph-color-on-white: #111111;
+            --paragraph-color-on-color: #D3D3D3;
+            --text-background-color: #52647C;
+            --header-title: #383E4B;
+            --header-background-color: #aaaaaf;
+            --nav-link-color: #e3ab57;
+            --nav-background-color: #214946;
+            --nav-paragraph-background-color: rgba(0,0,0,0.3);
+            --nav-paragraph-color: rgba(255, 255, 255, 75%);
+
+            --title-font: "Sorts Mill Goudy", sans-serif;
+            --heading-font: "Raleway", sans-serif;
+            --paragraph-font: "Pridi", serif;}
+
+
+/*/ HTML /*/ 
+html   {background-color: var(--page-background);}
+    /*/ Body /*/     
+    body   {background-color: var(--page-background-layer2);}
+        /*/ Header /*/    
+        header                                 {background-color: var(--header-background-color);
+                                                color: var(--paragraph-color-on-color);
+                                                display: flex;
+                                                flex-direction: column;
+                                                text-align: center;}
+        header section                         {display: grid;
+                                                grid-template-columns: 1fr 1fr 1fr;}
+        header h1                              {color: var(--header-title);
+                                                font-family:'Noto Sans', sans-serif;
+                                                font-variant: small-caps;
+                                                font-size: 2.2em;
+                                                font-weight: bold;
+                                                grid-column: 2;}
+        nav                                    {background-color: var(--nav-background-color);
+                                                padding: 1rem;}
+        nav button                             {background-color: transparent;
+                                                border: none;
+                                                border-color: rgba(255,255,255,0.3);
+                                                border-style: solid;
+                                                border-width: 1px;
+                                                color: #fff;
+                                                font-size: 2rem;}
+        nav button span:nth-child(1)           {display: block;}
+        nav button span:nth-child(2)           {display: none;}
+        nav button.open span:nth-child(1)      {display: none;}  
+        nav button.open span:nth-child(2)      {display: block;}                                                                              
+        nav p                                  {background-color: var(--nav-paragraph-background-color);
+                                                color: var(--nav-paragraph-color);
+                                                font-family: "Raleway", sans-serif;
+                                                text-align:center;}
+        nav ul                                 {display: none;
+                                                list-style: none;
+                                                margin: 0;
+                                                padding: 0;
+                                                text-align:center;}
+        nav ul li a                            {border-top: 1px solid rgba(0,0,0,0.5);
+                                                color: var(--nav-link-color);
+                                                display: block;
+                                                font-family: "Raleway", sans-serif;
+                                                padding: .8rem 2vw;
+                                                text-decoration: none;}
+        nav ul li.active a                     {background-color: rgba(0,0,0,0.2);
+                                                color: #fff;}
+        nav ul li a:hover                      {background-color: rgba(0,0,0,0.3);}       /* Move this below the active class for the products block to change color when hovered over*/
+        nav ul.open                            {display: block;}
+        #header-facebook                       {border-radius: 100%;
+                                                width: 50px;}
+        #header-logo                           {grid-column: 1;
+                                                margin: auto;
+                                                width: 85px;}
+        #header-pinterest                      {border-radius: 100%;
+                                                width: 50px;}
+        #navigation-date                       {border-color: rgba(55,91,88,0.7);
+                                                border-style: solid;
+                                                border-width: 1px;
+                                                padding: 1rem;}
+        .social-media                          {grid-column: 3; 
+                                                margin: auto;}                            
+
+
+        /*/ Main /*/
+        main                                   {padding: 1rem;}
+        main div                               {background-color: var(--text-background-color);
+                                                border-color: var(--primary-color);
+                                                border-radius: 5px;
+                                                border-style: solid;
+                                                border-width: 1px;
+                                                color: var(--paragraph-color-on-color);
+                                                font-family: var(--paragraph-font);
+                                                margin: 1rem;}
+        main div h2                            {margin-left: 1rem;}
+        main div p                             {margin-left: 1rem;
+                                                margin-right: 1rem;}
+        main div img                           {margin-left: 1rem;}
+        main figure                            {display: grid;}
+        main figure img                        {width: 100%;
+                                                border-radius: 25px;
+                                                grid-row: 1;
+                                                grid-column: 1;}
+        main figure figcaption                 {grid-column: 1;
+                                                grid-row: 1;
+                                                margin-top: auto;
+                                                margin-bottom: auto;
+                                                position: relative;}
+        main figure figcaption button          {background-color: rgba(106,82,124,1);
+                                                border-color: var(--primary-color);
+                                                border-radius: 5px;
+                                                border-style: solid;
+                                                border-width: 1px;
+                                                color: var(--paragraph-color-on-color);
+                                                display: block;
+                                                margin: auto;
+                                                padding: 0.5rem;}
+        main figure figcaption p               {color: #fff;
+                                                font-family: var(--title-font);
+                                                font-size: 1.5em;
+                                                text-align: center;
+                                                text-shadow: 2px 2px 4px #000000;}
+        main h2, h3                            {color: var(--subtitle-color-on-color);
+                                                font-family: var(--heading-font);
+                                                font-size: 1.3em;}
+        main section div                       {background-color: var(--text-background-color);
+                                                border-radius: 5px;
+                                                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                                                color: var(--paragraph-color-on-color);
+                                                font-style: oblique;}
+        main section div h2                    {margin-left: 1rem;}
+        main section div p                     {margin-left: 1rem;}
+        #banner                                {background-color: rgba(50,150,0, 0.65);
+                                                border-color: var(--primary-color);
+                                                border-radius: 5px;
+                                                border-style: solid;
+                                                border-width: 1px;
+                                                font-family: 'Noto Sans';
+                                                margin: auto;
+                                                padding: 0.5rem;
+                                                width: max-content;}
+        #joinBtn:hover                         {background-color: rgba(106,82,124,0.92);}
+        #raffle img                            {background-color: #eee;
+                                                width: 100px;}   
+        #weather img                           {width: 100px;}
+
+
+        /*/ Footer /*/
+        footer                                 {background-color: var(--nav-background-color);
+                                                color: rgba(255, 255, 255, 75%);
+                                                padding: 1rem;
+                                                text-align: center;}
+        footer div p                           {font-family: "Gentium Basic", sans-serif;
+                                                font-size: 1.1em;
+                                                text-align: center;}
+        footer h3                              {font-family: "Raleway", sans-serif;
+                                                font-size: 1.4em;
+                                                font-weight: bold;
+                                                margin-top: 0.6rem;}
+        #footer-bottom                         {border-top: 2px solid rgba(255, 255, 255, 25%);
+                                                padding: 1rem;
+                                                font-size: 0.8em;
+                                                font-family: sans-serif;
+                                                text-align: center;}
+        #footer-logo                           {width: 125px;}
+        #footer-pin                            {width: 14px;}
