@@ -2,6 +2,7 @@
 body 
    {display: flex;
     flex-direction: column;
+    align-items: center;
     height: 100vh;}
 /* Dark Mode*/
     .dark-mode 
@@ -25,15 +26,15 @@ body
         
        /* 1.1 Menu 1.1 */
        .menu {
-        position: fixed;
-        top: 0;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        background: #f7f7f7;
-        z-index: 10;
-        overflow: hidden;
-        box-shadow: 2px 0 20px rgba(0, 0, 0, 0.26);
+            position: fixed;
+            top: 0;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            z-index: 10;
+            overflow: hidden;
+            box-shadow: 2px 0 20px rgba(0, 0, 0, 0.26);
         }
         .menu li a {
             display: block;
@@ -79,7 +80,7 @@ body
             background-color: rgba(0,0,0,0.1);
             font-weight: 700;
         }
-
+        
     /* 2 Header 2 */
     header 
        {display: flex;
@@ -97,12 +98,42 @@ body
         margin: auto;
         padding: 0.5rem;}
 
-    /* 3 Main 3 */
+    /* 3 Hero 3 */
+    .hero {
+        margin-top: 2rem;
+        position: relative;
+        height: auto;
+    }
+    .hero img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .herolabel {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        background: radial-gradient(#fff, #4D5B97);
+        border: 1px solid rgba(0,0,0,.75);
+        padding: 1.5rem;
+        box-shadow: 0 0 3rem #fff;
+        opacity: 0.75;
+    }
+    .herolabel p {
+        margin: 0;
+        padding: .25rem;
+        font-weight: 700;
+        font-size: 1.85rem;
+        font-family:"Great Vibes", serif;
+    }
+
+    /* 4 Main 4 */
     main 
-       {font-family: 'Raleway', sans-serif;
+       {background-color: white;
+        font-family: 'Raleway', sans-serif;
         font-size: 1.5rem;
         max-width: 760px;
-        margin: auto;}
+        margin: 1rem;}
     main h2 
        {font-family: serif;
         font-size: 2rem;
@@ -117,6 +148,17 @@ body
     main section ul.no-bullets 
        {list-style-type: none;
         padding-left: 0;}
+    iframe 
+       {margin-bottom: 2rem;}
+    .website-counter 
+       {background-color: #ff4957;
+        height: 50px;
+        width: 80px;
+        color: white;
+        border-radius: 30px;
+        font-weight: 700;
+        font-size: 25px;
+        margin-top: 10px;}
 
     /* 4 Footer 4 */
     footer 

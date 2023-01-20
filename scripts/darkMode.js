@@ -13,7 +13,7 @@ modeButton.addEventListener("click", () => {
 		Section3.style.background = "#000";
 		modeButton.textContent = "❎ Toggle light mode";
 	} else {
-		main.style.background = "#eee";
+		main.style.background = "#fff";
 		main.style.color = "#000";
 		Section1.style.background = "#eeeeee";
 		Section2.style.background = "#eeeeee";
