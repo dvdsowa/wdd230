@@ -99,65 +99,16 @@ html   {background-color: var(--page-background);}
 
         /*/ Main /*/
         main                                   {padding: 1rem;}
-        main div                               {background-color: var(--text-background-color);
-                                                border-color: var(--primary-color);
-                                                border-radius: 5px;
-                                                border-style: solid;
-                                                border-width: 1px;
-                                                color: var(--paragraph-color-on-color);
-                                                font-family: var(--paragraph-font);
-                                                margin: 1rem;}
-        main div h2                            {margin-left: 1rem;}
-        main div p                             {margin-left: 1rem;
-                                                margin-right: 1rem;}
-        main div img                           {margin-left: 1rem;}
+        main div                               {text-align: center;}
         main figure                            {display: grid;}
-        main figure img                        {width: 100%;
-                                                border-radius: 25px;
-                                                grid-row: 1;
-                                                grid-column: 1;}
-        main figure figcaption                 {grid-column: 1;
-                                                grid-row: 1;
-                                                margin-top: auto;
-                                                margin-bottom: auto;
-                                                position: relative;}
-        main figure figcaption button          {background-color: rgba(106,82,124,1);
-                                                border-color: var(--primary-color);
-                                                border-radius: 5px;
-                                                border-style: solid;
-                                                border-width: 1px;
-                                                color: var(--paragraph-color-on-color);
-                                                display: block;
+        main figure img                        {border-radius: 25px;
                                                 margin: auto;
-                                                padding: 0.5rem;}
-        main figure figcaption p               {color: #fff;
-                                                font-family: var(--title-font);
-                                                font-size: 1.5em;
-                                                text-align: center;
-                                                text-shadow: 2px 2px 4px #000000;}
-        main h2, h3                            {color: var(--subtitle-color-on-color);
+                                                padding-bottom: 1rem;
+                                                width: 100%;}
+        main figure figcaption                 {margin: auto;}
+        main h2                                {color: var(--subtitle-color-on-color);
                                                 font-family: var(--heading-font);
                                                 font-size: 1.3em;}
-        main section div                       {background-color: var(--text-background-color);
-                                                border-radius: 5px;
-                                                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-                                                color: var(--paragraph-color-on-color);
-                                                font-style: oblique;}
-        main section div h2                    {margin-left: 1rem;}
-        main section div p                     {margin-left: 1rem;}
-        #banner                                {background-color: rgba(50,150,0, 0.65);
-                                                border-color: var(--primary-color);
-                                                border-radius: 5px;
-                                                border-style: solid;
-                                                border-width: 1px;
-                                                font-family: 'Noto Sans';
-                                                margin: auto;
-                                                padding: 0.5rem;
-                                                width: max-content;}
-        #joinBtn:hover                         {background-color: rgba(106,82,124,0.92);}
-        #raffle img                            {background-color: #eee;
-                                                width: 100px;}   
-        #weather img                           {width: 100px;}
 
 
         /*/ Footer /*/

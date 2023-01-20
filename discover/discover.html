@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover page for WDD 230 class.">
+    <meta name="author" content="David Sowa">
+    <meta property="og:title" content="WDD 230 - Chamber of Commerce - Discover - David Sowa">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/f/f6/Granbury_June_2018_35_%28Hood_County_Courthouse%29.jpg">
+    <meta property="og:url" content="https://dvdsowa.github.io/wdd230/discover/">
+    <title>Discover Granbury</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700&family=Noto+Sans&family=Pridi&family=Raleway&family=Ruda&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/largest.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav" title="menu">
+                    <li title="home">
+                        <a href="https://dvdsowa.github.io/wdd230/chamber/" target="_blank">Home</a>
+                    </li>
+                    <li class="active" title="discover">
+                        <a href="https://dvdsowa.github.io/wdd230/discover/" target="_blank">Discover</a>
+                    </li>
+                    <li title="directory">
+                        <a href="#" target="_blank">Directory</a>
+                    </li>
+                    <li title="join">
+                        <a href="#" target="_blank">Join</a>
+                    </li>
+                </ul>
+            <p id="navigation-date"></p>
+        </nav>
+        <section>
+            <img src="images/logowp.webp" alt="compass logo" id="header-logo">
+            <h1>Granbury Chamber Of Commerce</h1>
+            <div class="social-media">
+                <img src="images/facebook-min.png" alt="facebook logo" id="header-facebook">
+                <img src="images/instagram-min.png" alt="pinterest logo" id="header-pinterest">
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <figure>
+            <img src="images/hero-640w.jpg" sizes="100vw" alt="Thitherham main street"
+                srcset="images/hero-640w.jpg 640w, 
+                images/hero-1280w.jpg 1280w, 
+                images/hero-1920w.jpg 1920w
+                "
+                loading="lazy">
+            <figcaption>
+                Entrance to shops and parking on New Main street.
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/oldms-640w.jpg" sizes="100vw" alt="Old main street"
+                srcset="images/oldms-640w.jpg 640w, 
+                images/oldms-1280w.jpg 1280w, 
+                images/oldms-1920w.jpg 1920w
+                "
+                loading="lazy">
+            <figcaption>
+                Old main street in 1903.
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/ms-640w.jpg" sizes="100vw" alt="Thitherham historic center"
+                srcset="images/ms-640w.jpg 640w, 
+                images/ms-1280w.jpg 1280w, 
+                images/ms-1920w.jpg 1920w
+                "
+                loading="lazy">
+            <figcaption>
+                Historic Center of Thitherham.
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/mill-640w.jpg" sizes="100vw" alt="Thitherham mill"
+                srcset="images/mill-640w.jpg 640w, 
+                images/mill-1280w.jpg 1280w, 
+                images/mill-1920w.jpg 1920w
+                "
+                loading="lazy">
+            <figcaption>
+                Thitherham mill where our famous flour is ground.
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/lighthouse-640w.jpg" sizes="100vw" alt="Thitherham lighthouse"
+                srcset="images/lighthouse-640w.jpg 640w, 
+                images/lighthouse-1280w.jpg 1280w, 
+                images/lighthouse-1920w.jpg 1920w
+                "
+                loading="lazy">
+            <figcaption>
+                The lobster business is alive and well in Thitherham, and the Old Lighthouse leads our fishermen safely back to harbor.
+            </figcaption>
+        </figure>
+        <div>
+            <h2>Statistics about Thitherham</h2>
+            <ul>
+                <li>Most of the local economy has been based on flour since the mid 19th century.</li>
+                <li>The coastline is also a big attraction for the town. Thitherham is a major source of seafood.</li>
+                <li>Thitherham is home to 300,000 people. Mostly middle to upper-middle class.</li>
+                <li>1/3 of the local revenue comes from the seafood and wheat industries.</li>
+                <li>The town numbers swell in the summer time to excess of 500,000 thanks to ours turists and summer residents.</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <img src="images/logowp.webp" alt="compass logo" id="footer-logo">
+            <h3>Granbury Chamber of Commerce</h3>
+            <p class="address"><em>100 Main Street, Granbury, Texas, 76048</em><br class="normal">info@granburychoc.org<br>+(123) 555-6789<br><img src="images/location-min.png" alt="pin icon" id="footer-pin"> Location Map</p>
+        </div>
+        <p id="footer-bottom">&copy; <span id="copyrightyear"></span> &bull; <span id="author">David Sowa</span> &bull; WDD 230 Project &bull; <span id="update"></span></p>
+    </footer>
+    <script src="scripts/dates.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+</body>
+</html>

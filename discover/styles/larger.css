@@ -1,0 +1,19 @@
+@media only screen and (min-width: 35rem) {
+
+    /*/ HTML /*/
+    /*/ Body /*/
+        /*/ Header /*/
+        header h1                        {font-size: 2.4em;}
+        #header-facebook                 {width: 55px;}
+        #header-logo                     {width: 100px;}
+        #header-pinterest                {width: 55px;}
+        #navigation-date                 {font-size: 1.1em;}
+        #primaryNav                      {font-size: 1.1em;}
+
+        /*/ Main /*/
+        main div                         {font-size: 1.1em;}
+        main figure figcaption           {font-size: 1.1em;}
+
+        /*/ Footer /*/
+        footer h3                        {font-size: 1.5em;}
+}
