@@ -98,18 +98,25 @@ html   {background-color: var(--page-background);}
 
 
         /*/ Main /*/
-        main                                   {padding: 1rem;}
-        main div                               {text-align: center;}
-        main figure                            {display: grid;}
+        main                                   {font-family: var(--paragraph-font);}
+        main div                               {background-color: var(--text-background-color);
+                                                color: var(--paragraph-color-on-color);
+                                                padding: 1rem;}
+        main div h2, h3, p                     {margin-left: 2.5rem;}
+        main figure                            {flex-direction: column;padding: 1rem;}
         main figure img                        {border-radius: 25px;
                                                 margin: auto;
-                                                padding-bottom: 1rem;
-                                                width: 100%;}
-        main figure figcaption                 {margin: auto;}
+                                                width: 100%;
+                                                height: auto;}
+        main figure figcaption                 {margin: auto;
+                                                padding-top: 1rem;font-family: "Arial", sans-serif;}
         main h2                                {color: var(--subtitle-color-on-color);
                                                 font-family: var(--heading-font);
                                                 font-size: 1.3em;}
-
+        main h3                                {color: var(--subtitle-color-on-color);
+                                                font-family: var(--heading-font);}
+          /* hover effect */
+          .hover:hover                         {box-shadow: 0 0 50px #333;}
 
         /*/ Footer /*/
         footer                                 {background-color: var(--nav-background-color);

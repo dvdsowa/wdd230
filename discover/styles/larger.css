@@ -11,8 +11,15 @@
         #primaryNav                      {font-size: 1.1em;}
 
         /*/ Main /*/
-        main div                         {font-size: 1.1em;}
-        main figure figcaption           {font-size: 1.1em;}
+        main                             {display: grid;
+                                          font-size: 1.1em;
+                                          grid-template-columns: 1fr 1fr;}
+        main div                         {grid-column: 1;
+                                          grid-row: 1/5;}
+        main figure img                  {margin:0;}
+        #photo1                          {grid-column: 2;}
+        #photo2                          {grid-column: 2;}
+        #photo3                          {grid-column: 2;}
 
         /*/ Footer /*/
         footer h3                        {font-size: 1.5em;}
