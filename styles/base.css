@@ -1,165 +1,203 @@
-/* Body */
-body 
-   {display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;}
-/* Dark Mode*/
-    .dark-mode 
-       {background-color: black;
-        color: white;}
+:root {
+    --blue:  #445ba9;
+    --gray:  #555;
+    --red:   #9c2c13;
+    --back: hsla(150, 50%, 30%, 1);
+	--back2: hsla(150, 50%, 30%, .5);
+	--foredark: hsla(0,0%,10%,1);
+	--forelight: hsla(0,0%,100%,1);
+	--border: hsl(0,0%,20%);
+	--borderlight: hsl(0,0%,33%);
+	--shadow: hsl(0,0%,50%);
+	--zebra: hsl(0, 0%, 93%, 1);
+}
 
-    /* 1 Navigation 1 */
-    nav 
-       {width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Raleway', sans-serif;
-        background-color: navy;
-        color: white;
-        padding: 1rem 0rem 2rem 0rem;}
-    nav a 
-       {text-decoration: none;
-        color: white;}
-        
-       /* 1.1 Menu 1.1 */
-       .menu {
-            position: fixed;
-            top: 0;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            background: #f7f7f7;
-            z-index: 10;
-            overflow: hidden;
-            box-shadow: 2px 0 20px rgba(0, 0, 0, 0.26);
-        }
-        .menu li a {
-            display: block;
-            text-decoration: none;
-            text-align: center;
-            width: 10rem;
-            padding: 0.9rem;
-            color: #72739f;
-            position: relative;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-            transition: background 0.5s ease-in-out;
-            margin-right: 0;
-        }
-        .menu li button {
-            text-align: center;
-            padding: 0.3rem;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-        }
-        .menu li a:hover,
-        .menu li:first-child a {
-            background: #267fdd;
-            color: #fff;
-        }
-        li a.menu-item {
-            display: none;
-        }
-        li a.open {
-            display: flex;
-        }
-        li button.menu-item {
-            display: none;
-        }
-        li button.open {
-            display: flex;
-        }
-        .close::before {
-            content: "❌ ";
-        }
-        .active {
-            background-color: rgba(0,0,0,0.1);
-            font-weight: 700;
-        }
-        
-    /* 2 Header 2 */
-    header 
-       {display: flex;
-        flex-direction: column;
-        width: 100%;
-        background-color: lightgoldenrodyellow;}
-    header img 
-       {width: 100px;
-        margin: auto;
-        padding-top: 1rem;}
-    header h1 
-       {color: chocolate;
-        font-family: 'Raleway', sans-serif;
-        font-size: 2.5rem;
-        margin: auto;
-        padding: 0.5rem;}
+body                                                           {display: flex;                                                  /* Body */
+                                                                flex-direction: column;
+                                                                align-items: center;
+                                                                height: 100vh;}
+    .dark-mode                                                 {background-color: black;                                      /* Dark Mode*/
+                                                                color: white;}
 
-    /* 3 Hero 3 */
-    .hero {
-        margin-top: 2rem;
-        position: relative;
-        height: auto;
-    }
-    .hero img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-    .herolabel {
-        position: absolute;
-        top: 30px;
-        left: 30px;
-        background: radial-gradient(#fff, #4D5B97);
-        border: 1px solid rgba(0,0,0,.75);
-        padding: 1.5rem;
-        box-shadow: 0 0 3rem #fff;
-        opacity: 0.75;
-    }
-    .herolabel p {
-        margin: 0;
-        padding: .25rem;
-        font-weight: 700;
-        font-size: 1.85rem;
-        font-family:"Great Vibes", serif;
-    }
 
-    /* 4 Main 4 */
-    main 
-       {background-color: white;
-        font-family: 'Raleway', sans-serif;
-        font-size: 1.5rem;
-        max-width: 760px;
-        margin: 1rem;}
-    main h2 
-       {font-family: serif;
-        font-size: 2rem;
-        margin: auto;
-        padding: 2rem;}
-    main section 
-       {background-color: #eeeeee;
-        border: 1px solid #bbbbbb;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        margin-bottom: 1rem;}
-    main section ul.no-bullets 
-       {list-style-type: none;
-        padding-left: 0;}
-    iframe 
-       {margin-bottom: 2rem;}
+    nav                                                        {width: 100%;                                                    /* 1 Navigation 1 */
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                align-items: center;
+                                                                justify-content: center;
+                                                                font-family: 'Raleway', sans-serif;
+                                                                background-color: navy;
+                                                                color: white;
+                                                                padding: 1rem 0rem 2rem 0rem;}
+    nav a                                                      {text-decoration: none;
+                                                                color: white;}
 
-    /* 4 Footer 4 */
-    footer 
-       {font-family: 'Raleway', sans-serif;
-        display: flex;
-        flex-direction: column;
-        background-color: navy;
-        color: white;
-        width: 100%;
-        padding-top: 1rem;
-        padding-bottom: 1rem;}
-    footer p 
-       {margin: auto;}
+        .menu                                                  {position: fixed;                                                /* 1.1 Nav Menu 1.1 */
+                                                                top: 0;
+                                                                list-style-type: none;
+                                                                margin: 0;
+                                                                padding: 0;
+                                                                background: #f7f7f7;
+                                                                z-index: 10;
+                                                                overflow: hidden;
+                                                                box-shadow: 2px 0 20px rgba(0, 0, 0, 0.26);}
+        .menu li a                                             {display: block;
+                                                                text-decoration: none;
+                                                                text-align: center;
+                                                                width: 10rem;
+                                                                padding: 0.9rem;
+                                                                color: #72739f;
+                                                                position: relative;
+                                                                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                                                                transition: background 0.5s ease-in-out;
+                                                                margin-right: 0;}
+        .menu li button                                        {text-align: center;
+                                                                padding: 0.3rem;
+                                                                margin-left: auto;
+                                                                margin-right: auto;
+                                                                margin-top: 1rem;
+                                                                margin-bottom: 1rem;}
+        .menu li a:hover, .menu li:first-child a               {background: #267fdd;
+                                                                color: #fff;}
+        li a.menu-item                                         {display: none;}
+        li a.open                                              {display: flex;}
+        li button.menu-item                                    {display: none;}
+        li button.open                                         {display: flex;}
+        .close::before                                         {content: "❌ ";}
+        .active                                                {background-color: rgba(0,0,0,0.1);
+                                                                font-weight: 700;}
+
+
+            header                                             {display: flex;                                                  /* 2 Header 2 */
+                                                                flex-direction: column;
+                                                                width: 100%;
+                                                                background-color: lightgoldenrodyellow;}
+            header img                                         {width: 100px;
+                                                                margin: auto;
+                                                                padding-top: 1rem;}
+            header h1                                          {color: chocolate;
+                                                                font-family: 'Raleway', sans-serif;
+                                                                font-size: 2.5rem;
+                                                                margin: auto;
+                                                                padding: 0.5rem;}
+
+
+            .hero                                              {margin-top: 2rem;                                               /* 3 Hero 3 */
+                                                                position: relative;
+                                                                height: auto;}
+            .hero img                                          {width: 100%;
+                                                                height: auto;
+                                                                object-fit: cover;}
+            .herolabel                                         {position: absolute;
+                                                                top: 30px;
+                                                                left: 30px;
+                                                                background: radial-gradient(#fff, #4D5B97);
+                                                                border: 1px solid rgba(0,0,0,.75);
+                                                                padding: 1.5rem;
+                                                                box-shadow: 0 0 3rem #fff;
+                                                                opacity: 0.75;}
+            .herolabel p                                       {margin: 0;
+                                                                padding: .25rem;
+                                                                font-weight: 700;
+                                                                font-size: 1.85rem;
+                                                                font-family:"Great Vibes", serif;}
+
+
+            main                                               {background-color: white;                                      /* 4 Main 4 */
+                                                                font-family: 'Raleway', sans-serif;
+                                                                font-size: 1.5rem;
+                                                                max-width: 760px;
+                                                                margin: 1rem;}
+            main h2                                            {font-family: serif;
+                                                                font-size: 2rem;
+                                                                margin: auto;
+                                                                padding: 2rem;}
+            main section                                       {background-color: #eeeeee;
+                                                                border: 1px solid #bbbbbb;
+                                                                padding-left: 1rem;
+                                                                padding-right: 1rem;
+                                                                margin-bottom: 1rem;}
+            main section ul.no-bullets                         {list-style-type: none;
+                                                                padding-left: 0;}
+            iframe                                             {margin-bottom: 2rem;}
+
+
+                button                                         {padding: .75rem 1.5rem;                                         /* Form */
+                                                                margin: 0.5rem 2%;
+                                                                width: 96%; /*adequate smaller screens*/
+                                                                max-width: 20rem; /*for larger screens*/}
+                form                                           {margin-bottom: 2rem;}
+                form fieldset                                  {border: 1px solid var(--blue);
+                                                                border-radius: 10px;
+                                                                width: 100%;}
+                form legend                                    {color: var(--blue);
+                                                                margin: 0 1rem;
+                                                                padding: 0 .5rem;}
+                form label, form div                           {padding-top: 1rem;
+                                                                color: var(--red);
+                                                                font-size: .8rem;}
+                form label input                               {--webkit-appearance: none;
+                                                                font-size: 1rem;
+                                                                border: solid 1px #999;
+                                                                border-radius: 4px;
+                                                                padding: .75rem;
+                                                                color: var(--gray);
+                                                                width: 100%;
+                                                                max-width: 20rem;
+                                                                background-color: rgba(0,0,0,0.1);}
+                label, input                                   {display: block;
+                                                                margin: 0.25rem;
+                                                                padding: 0.35rem;
+                                                                width: 77.5%;}
+                #formmessage                                   {display: none;
+                                                                text-align: center;
+                                                                border: 1px solid rgba(0, 0, 0, 0.2);
+                                                                background-color: #aa3333;
+                                                                color: #fff;
+                                                                margin:0.5rem;
+                                                                padding: 0.5rem;}
+                #keyphrase:invalid                             {background-color: var(--red);
+                                                                color: #fff;}
+                #keyphrase:valid                               {background-color: green;
+                                                                color: #fff;}
+                #r                                             {margin-bottom: 0;
+                                                                padding-bottom: 0;
+                                                                width: 80%;}
+                .rangecontainer                                {padding: 0;}
+                .ratinglabels                                  {font-size: 0.8rem;
+                                                                margin: 0 0 1rem 1.1rem;
+                                                                display: flex;
+                                                                justify-content: space-around;
+                                                                width: 93%}
+                #rating                                        {color: var(--blue);}
+                #results                                       {display: none;}
+                .ratevalue                                     {margin: 0;
+                                                                flex: 1 1 auto;}
+                table                                          {margin: 1rem auto;                                              /* Table */ 
+                                                                margin-bottom: 2rem;
+                                                                border: thin solid var(--border);                                                  
+                                                                box-shadow: 0 0 7px var(--shadow);
+                                                                border-collapse: collapse;}
+                caption                                        {padding: 10px;
+                                                                caption-side: bottom;
+                                                                color: var(--back);
+                                                                font-size: .85rem;}
+                tr:first-child th                              {background-color: var(--back);
+                                                                color: var(--forelight);}
+                th, td                                         {padding: 7px 15px;
+                                                                border: 1px solid var(--borderlight);}
+                th                                             {background-color: var(--back2);
+                                                                font-size: larger;}
+                td                                             {text-align: center;}
+                tbody tr:nth-child(even)                       {background-color: var(--zebra);}
+
+
+                    footer                                     {font-family: 'Raleway', sans-serif;                             /* 4 Footer 4 */
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                background-color: navy;
+                                                                color: white;
+                                                                width: 100%;
+                                                                padding-top: 1rem;
+                                                                padding-bottom: 1rem;}
+                    footer p                                   {margin: auto;}
