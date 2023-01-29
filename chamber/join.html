@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page for a ficticious chamber of commerce for my WDD 230 class.">
+    <meta name="author" content="David Sowa">
+    <meta property="og:title" content="Granbury Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/f/f6/Granbury_June_2018_35_%28Hood_County_Courthouse%29.jpg">
+    <meta property="og:url" content="https://dvdsowa.github.io/wdd230/chamber/">
+    <title>Granbury Chamber of Commerce Home</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700&family=Noto+Sans&family=Pridi&family=Raleway&family=Ruda&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/largest.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav" title="menu">
+                    <li class="active" title="home">
+                        <a href="https://dvdsowa.github.io/wdd230/chamber/" target="_blank">Home</a>
+                    </li>
+                    <li title="discover">
+                        <a href="https://dvdsowa.github.io/wdd230/discover/discover.html" target="_blank">Discover</a>
+                    </li>
+                    <li title="directory">
+                        <a href="#" target="_blank">Directory</a>
+                    </li>
+                    <li title="join">
+                        <a href="#" target="_blank">Join</a>
+                    </li>
+                </ul>
+            <p id="navigation-date"></p>
+        </nav>
+        <section>
+            <img src="images/logowp.webp" alt="compass logo" id="header-logo">
+            <h1>Granbury Chamber Of Commerce</h1>
+            <div class="social-media">
+                <img src="images/facebook-min.png" alt="facebook logo" id="header-facebook">
+                <img src="images/instagram-min.png" alt="pinterest logo" id="header-pinterest">
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <h1>Granbury ChoC Application</h1>
+        <form method="get" action="thankyou.html">
+            <fieldset id="ftop">
+                <legend>Applicant Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" placeholder="Chuck" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" placeholder="Norris" required></label>
+                <label class="top">Title <input type="text" name="title" placeholder="Emperor of the Known Universe" pattern="[a-zA-Z-\s]{7,}"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Cell Phone* <input type="tel" name="cellphone" placeholder="1235551234" required></label>
+                <label class="top">Business Name/Title* <input type="text" name="businessname" placeholder="Local Potato Factory" required"></label>
+            </fieldset>
+            <fieldset id="membership">
+                <legend>Membership Tiers</legend>
+                    <label class="sbs" id="sbs1"><input type="radio" name="membership" value="np"> Non-Profit</label>
+                    <p id="sbs5">The Non-Profit Membership is for non-profit organizations. No fee is required for this tier.</p>
+                    <label class="sbs" id="sbs2"><input type="radio" name="membership" value="bronze"> Bronze</label>
+                    <p id="sbs6">The Bronze Membership costs $5 a month and includes the Granbury newsletter and coupons to local businesses. </p>
+                    <label class="sbs" id="sbs3"><input type="radio" name="membership" value="silver"> Silver</label>
+                    <p id="sbs7">The Silver Membership costs $10 a month. It includes the perks of the Bronze tier and adds on online advertising.</p>
+                    <label class="sbs" id="sbs4"><input type="radio" name="membership" value="gold"> Gold</label>
+                    <p id="sbs8">The Gold Membership costs $20 a month. All perks of previous tiers are included. Additionally, gold members receive a dedicated business coach available 24/7 and premier online advertising slots.</p>
+            </fieldset>
+            <fieldset id="fbottom">
+                <legend>Business Description</legend>
+                <label class="bottom"><textarea name="businessdescription" title="Please provide a brief description of your business." rows="4" cols="50"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Sign up" class="submitBtn">
+        </form>
+    </main>
+    
+    <footer>
+        <div>
+            <img src="images/logowp.webp" alt="compass logo" id="footer-logo">
+            <h3>Granbury Chamber of Commerce</h3>
+            <p class="address"><em>100 Main Street, Granbury, Texas, 76048</em><br class="normal">info@granburychoc.org<br>+(123) 555-6789<br><img src="images/location-min.png" alt="pin icon" id="footer-pin"> Location Map</p>
+        </div>
+        <p id="footer-bottom">&copy; <span id="copyrightyear"></span> &bull; <span id="author">David Sowa</span> &bull; WDD 230 Project &bull; <span id="update"></span></p>
+    </footer>
+    <script src="scripts/dates.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
