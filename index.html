@@ -85,11 +85,11 @@
             <fieldset>
                 <legend>📧 Contact Us!</legend>
                 <div id="formmessage"></div>
-                <label for="fullname">Full name* <input type="text" name="fullname" id="full-name" required></label>
-                <label for="email">Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
-                <label for="r">Rate the Service [ <span id="rating"></span> ]:</label>
+                <label>Full name* <input type="text" name="fullname" id="full-name" required></label>
+                <label>Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                <label>Rate the Service [ <span id="rating"></span> ]:</label>
                     <div class="rangecontainer">
-                        <input type="range" min="1" max="5" id="r" name="r" list="five" required="required">
+                        <input type="range" min="1" max="5" id="r" name="r">
                         <div class="ratinglabels">
                             <span class="ratevalue">1</span>
                             <span class="ratevalue">2</span>
@@ -98,8 +98,8 @@
                             <span class="ratevalue">5</span>
                         </div>
                     </div>
-                <label for="username">Username* <input type="password" id="keyphrase" name="username" pattern="(?=.*[^a-zA-Z0-9]){5,12}" placeholder="#username" title="5-12 characters, at least 1 characters is not a letter of the alphabet or a number." required></label>
-                <label for="repeat-username">Repeat Username* <input type="password" id="keyphrase2" name="repeat-username" placeholder="#username" title="repeat the username entered above."></label>
+                <label>Username* <input type="password" id="keyphrase" name="username" pattern="(?=.*[^a-zA-Z0-9]){5,12}" placeholder="#username" title="5-12 characters, at least 1 characters is not a letter of the alphabet or a number." required></label>
+                <label>Repeat Username* <input type="password" id="keyphrase2" name="repeat-username" placeholder="#username" title="repeat the username entered above."></label>
                 <button class="submitBtn" type="submit" onclick="formToTable()">Submit</button>
             </fieldset>
         </form>
@@ -107,7 +107,7 @@
             <caption>Table 1: Form Output</caption>
             <thead>
                 <tr>
-                    <th colspan="4" scope="colgroup">Form Input</th>
+                    <th colspan="2" scope="colgroup">Form Input</th>
                 </tr>
                 <tr>
                     <th scope="col">Field</th>
