@@ -1,0 +1,23 @@
+{
+    "family name": "Schmidt",
+    "Date of arrival": "January 1, 2000",
+    "Number of family members": 3,
+    "Visited by Bishopric": true,
+    "Family members" : [
+        {
+            "Name": "William",
+            "Gender": "Male",
+            "Birthday": "April 1, 1985"
+        },
+        {
+            "Name": "Mary",
+            "Gender": "Female",
+            "Birthday": "February 10, 1987"
+        },
+        {
+            "Name": "Michael",
+            "Gender": "Male",
+            "Birthday": "September 16, 1998"
+        }
+    ]
+}
