@@ -120,7 +120,7 @@ body                                                           {display: flex;  
             main section ul.no-bullets                         {list-style-type: none;
                                                                 padding-left: 0;}
             iframe                                             {margin-bottom: 2rem;}
-
+            #weather-icon                                      {background-color: skyblue;}
 
                 button                                         {padding: .75rem 1.5rem;                                         /* Form */
                                                                 margin: 0.5rem 2%;
@@ -157,7 +157,7 @@ body                                                           {display: flex;  
                                                                 margin:0.5rem;
                                                                 padding: 0.5rem;}
                 #keyphrase:invalid                             {background-color: var(--red);
-                                                                color: #fff;}
+                                                                color: wheat}
                 #keyphrase:valid                               {background-color: green;
                                                                 color: #fff;}
                 #r                                             {margin-bottom: 0;

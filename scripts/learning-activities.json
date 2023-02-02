@@ -1,0 +1,27 @@
+{
+    "Week01": ["//dvdsowa.github.io/wdd230/week01/holygrail.html",
+               "//dvdsowa.github.io/wdd230/week01/media-query.html",
+               "//dvdsowa.github.io/wdd230/week01/chamber-site-plan.html"],
+
+    "Week02": ["//dvdsowa.github.io/wdd230/week02/design.html",
+               "//codepen.io/dvdsowa/pen/JjBJYxw",
+               "//dvdsowa.github.io/wdd230/week02/bom.html",
+               "//dvdsowa.github.io/wdd230/chamber/index.html"],
+
+    "Week03": ["//dvdsowa.github.io/wdd230/week03/images/landscape.webp",
+               "//dvdsowa.github.io/wdd230/week03/lazyload.html",
+               "//codepen.io/dvdsowa/pen/eYjeoYz",
+               "//dvdsowa.github.io/wdd230/week03/bom.html",
+               "//dvdsowa.github.io/wdd230/discover/discover.html"],
+               
+    "Week04": ["//codepen.io/dvdsowa/pen/wvxyJpZ",
+               "//dvdsowa.github.io/wdd230/week04/images/combinators.png",
+               "//dvdsowa.github.io/wdd230/week04/tablebuild.html",
+               "//dvdsowa.github.io/wdd230/week04/form-start/",
+               "//dvdsowa.github.io/wdd230/chamber/join.html"],
+    
+    "Week05": ["//codepen.io/dvdsowa/pen/BaPOwom",
+               "//dvdsowa.github.io/wdd230/week05/new-ward-members.json",
+               "//dvdsowa.github.io/wdd230/week05/prophets.html",
+               "//dvdsowa.github.io/wdd230/week05/weather.html"]
+}
