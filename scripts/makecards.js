@@ -1,27 +1,26 @@
 const url = "https://dvdsowa.github.io/wdd230/scripts/learning-activities.json"
 const cards = document.querySelector('#cards');
 
-const displayProphets = (activities) => {
-    activities.forEach((activity) => {
-        let card = document.createElement('section');
-        let fullName = document.createElement('li');
-        let portrait = document.createElement('a');
+async function getLinkData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    keys = Object.keys(data);
+    displayLinkData(data.keys); 
+}
 
-        fullName.textContent = `${prophet.name} ${prophet.lastname}`;
-        
-        portrait.setAttribute('src', prophet.imageurl);
-        portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname}`);
-        portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '340');
-        portrait.setAttribute('height', '440');
-
-        card.appendChild(fullName);
-        card.appendChild(portrait);
-
-        cards.appendChild(card);
+function displayLinkData(data,keys) {
+    keys.forEach((key) => {
+        let li = document.createElement('li');  
+        li.textContent = key + ": ";
+        data[key].forEach(link => {
+            let a = document.createElement('a');
+            a.setAttribute('href', link.link);
+            a.setAttribute('target', '_blank');
+            a.textContent = link.name + ' | ';;
+            li.appendChild(a);
+        });  
+        cards.appendChild(li);
     });
 }
 
-fetch(url)
-    .then((results) => results)
-    .then((data) => console.log(data));
+getLinkData();
