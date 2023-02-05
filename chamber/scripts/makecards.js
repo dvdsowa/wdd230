@@ -10,12 +10,12 @@ async function getLinkData() {
 function displayLinkData(data,keys) {
     keys.forEach((key) => {
         const li = document.createElement('li');  
-        li.textContent = business.name + ": ";
+        li.textContent = key + ": ";
         data[key].forEach(business => {
             const p = document.createElement('p');
             //a.setAttribute('href', activity.link);
             //a.setAttribute('target', '_blank');
-            p.textContent = `${business.address}; ${business.phonenumber}; ${business.url}; ${business.image}; ${business.membershiplevel}; ${business.other}`;;
+            p.textContent = `${business.name}; ${business.address}; ${business.phonenumber}; ${business.url}; ${business.image}; ${business.membershiplevel}; ${business.other}`;;
             li.appendChild(p);
         });  
         cards.appendChild(li);
