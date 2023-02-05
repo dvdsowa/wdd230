@@ -138,6 +138,7 @@ html   {background-color: var(--page-background);}
         form label.top input:required:valid    {border-left: green solid 6px;}
 
         main                                   {padding: 1rem;}
+        main .directory                        {font-size: 3em; margin: 2.3rem;}
         main div                               {background-color: var(--text-background-color);
                                                 border-color: var(--primary-color);
                                                 border-radius: 5px;
@@ -174,9 +175,15 @@ html   {background-color: var(--page-background);}
                                                 font-size: 1.5em;
                                                 text-align: center;
                                                 text-shadow: 2px 2px 4px #000000;}
-        main h1, h2, h3                            {color: var(--subtitle-color-on-color);
+        main h1, h2, h3                        {color: var(--subtitle-color-on-color);
                                                 font-family: var(--heading-font);
                                                 font-size: 1.3em;}
+        main p                                 {background-color: var(--text-background-color);
+                                                color: var(--paragraph-color-on-color);
+                                                font-family: var(--paragraph-font);
+                                                margin: 0.06rem;
+                                                padding: 0.5rem;
+                                                max-width: 98%;}
         main section div                       {background-color: var(--text-background-color);
                                                 border-radius: 5px;
                                                 box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -184,6 +191,9 @@ html   {background-color: var(--page-background);}
                                                 font-style: oblique;}
         main section div h2                    {margin-left: 1rem;}
         main section div p                     {margin-left: 1rem;}
+        main span                              {font-family: var(--heading-font);
+                                                font-size: 1.3em;
+                                                margin: 0.5rem;}
         #banner                                {background-color: rgba(50,150,0, 0.65);
                                                 border-color: var(--primary-color);
                                                 border-radius: 5px;
@@ -195,7 +205,22 @@ html   {background-color: var(--page-background);}
                                                 width: max-content;}
         #ftop                                  {padding-bottom: 2rem;}
         #fbottom                               {padding-bottom: 1rem;}
+        .grid                                  {display: grid;
+                                                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                                                align-items: left;}
         #joinBtn:hover                         {background-color: rgba(106,82,124,0.92);}
+        .last                                  {margin-bottom: 0.25rem;}
+        .list                                  {display: flex;
+                                                flex-direction: column;}
+        .menu                                  {margin: 1rem auto;
+                                                border: 1px solid rgba(0, 0, 0, 0.1);
+                                                padding: 0.5rem;
+                                                background-color: #bbb;
+                                                text-align: center;
+                                                width: 250px;}
+        .menu button                           {padding: 1rem;
+                                                font-weight: 700;}
+        .no-bullets                            {list-style: none;}
         #raffle img                            {background-color: #eee;
                                                 width: 100px;}
         #thanks                                {text-align: center;}   
