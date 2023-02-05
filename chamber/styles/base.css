@@ -206,8 +206,7 @@ html   {background-color: var(--page-background);}
         #ftop                                  {padding-bottom: 2rem;}
         #fbottom                               {padding-bottom: 1rem;}
         .grid                                  {display: grid;
-                                                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                                                align-items: left;}
+                                                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));}
         #joinBtn:hover                         {background-color: rgba(106,82,124,0.92);}
         .last                                  {margin-bottom: 0.25rem;}
         .list                                  {display: flex;

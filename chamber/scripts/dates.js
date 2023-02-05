@@ -17,8 +17,10 @@ copyrightyear.textContent = currentDateAndTime.getFullYear();
 thedatenav.innerHTML = `${day}, ${day_number} ${month} ${year_number}`;
 thedatefooter.innerHTML = `Updated ${lastmodification}`;
 
+if (banner) {
 if (day = 'Monday' || 'Tuesday') {
 banner.innerHTML = `🤝🏼 Attend our meet-and-greet Wednesday at 7:00 p.m.`;
+}
 }
 
 //navigation-date
