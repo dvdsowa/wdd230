@@ -178,6 +178,10 @@ html   {background-color: var(--page-background);}
         main h1, h2, h3                        {color: var(--subtitle-color-on-color);
                                                 font-family: var(--heading-font);
                                                 font-size: 1.3em;}
+        main h4                                {font-family: var(--heading-font);
+                                                margin-bottom: 0.25rem;
+                                                margin-left: 1rem;
+                                                max-width: fit-content;}
         main p                                 {background-color: var(--text-background-color);
                                                 color: var(--paragraph-color-on-color);
                                                 font-family: var(--paragraph-font);
@@ -207,6 +211,7 @@ html   {background-color: var(--page-background);}
         #fbottom                               {padding-bottom: 1rem;}
         .grid                                  {display: grid;
                                                 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));}
+        #greeting                              {background-color: transparent;}
         #joinBtn:hover                         {background-color: rgba(106,82,124,0.92);}
         .last                                  {margin-bottom: 0.25rem;}
         .list                                  {display: flex;
@@ -223,7 +228,15 @@ html   {background-color: var(--page-background);}
         #raffle img                            {background-color: #eee;
                                                 width: 100px;}
         #thanks                                {text-align: center;}   
-        #weather img                           {width: 100px;}
+        #weather img                           {background-color: skyblue;
+                                                width: 100px;}
+        #weather figcaption                    {margin-left: 2rem;}
+        #weather .temp                         {border-width: 0;
+                                                color: #2B303A;
+                                                margin-left: 2rem;
+                                                margin-top: 0.25rem;
+                                                text-align: center;
+                                                max-width: max-content;}
 
 
         /*/ Footer /*/

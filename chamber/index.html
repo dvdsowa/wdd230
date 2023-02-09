@@ -56,8 +56,9 @@
         <p id="banner"></p>
 
         <figure>
+            
             <figcaption>
-                <p>Welcome to Granbury</p>
+                <p id="greeting">Welcome to Granbury</p>
                 <button id="joinBtn">Join our Chamber</button>
             </figcaption>
             <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Granbury_June_2018_35_%28Hood_County_Courthouse%29.jpg" alt="Granbury courthouse">
@@ -91,8 +92,22 @@
 
         <div title="weather" id="weather">
             <h2>Weather</h2>
-            <img src="images/weather-min.png" alt="sun and storm cloud">
-            <p>Granbury, Texas<br> 19 °C | 78% Humidity <br> Sunny with a chance of showers <br><span id="windchill"></span></p>
+            <h4 class="weather-descriptor">TODAY</h4>
+                <img id="weather-icon" src="" alt="">
+                <figcaption id="description"></figcaption>
+                <div id="current-temp" class="temp"></div>
+            <h4 class="weather-descriptor">TOMMOROW</h4> 
+                <img id="weather-icon-two" src="" alt=""> 
+                <figcaption id="description-two"></figcaption>
+                <div id="tommorow-temp" class="temp"></div> 
+            <h4 class="weather-descriptor">1 DAY AFTER</h4> 
+                <img id="weather-icon-three" src="" alt=""> 
+                <figcaption id="description-three"></figcaption>
+                <div id="two-days-temp" class="temp"></div>
+            <h4 class="weather-descriptor">2 DAYS AFTER</h4> 
+                <img id="weather-icon-four" src="" alt="">
+                <figcaption id="description-four"></figcaption> 
+                <div id="three-days-temp" class="temp"></div>
         </div>
     </main>
     
@@ -106,7 +121,7 @@
     </footer>
     <script src="scripts/dates.js"></script>
     <script src="scripts/hamburgerMenu.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
