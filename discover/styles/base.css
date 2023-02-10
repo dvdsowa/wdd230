@@ -115,6 +115,7 @@ html   {background-color: var(--page-background);}
                                                 font-size: 1.3em;}
         main h3                                {color: var(--subtitle-color-on-color);
                                                 font-family: var(--heading-font);}
+        #navigation-date                       {margin-left: 1rem;}
           /* hover effect */
           .hover:hover                         {box-shadow: 0 0 50px #333;}
 
