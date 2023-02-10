@@ -18,8 +18,11 @@ thedatenav.innerHTML = `${day}, ${day_number} ${month} ${year_number}`;
 thedatefooter.innerHTML = `Updated ${lastmodification}`;
 
 if (banner) {
-if (day = 'Monday' || 'Tuesday') {
-banner.innerHTML = `🤝🏼 Attend our meet-and-greet Wednesday at 7:00 p.m.`;
+if (day == 'Monday' || day == 'Tuesday' || day == 'Wednesday') {
+    banner.style.display = "none";
+    banner.innerHTML = `🤝🏼 Attend our meet-and-greet Wednesday at 7:00 p.m.`;
+} else {
+    banner.style.display = "none";
 }
 }
 
