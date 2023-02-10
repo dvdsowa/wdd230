@@ -8,7 +8,7 @@ async function getLinkData() {
     const data = await response.json();
     keys = Object.keys(data);
     filteredArray = transform(data);
-    console.log(filteredArray);
+    //console.log(filteredArray);
     displayLinkData(filteredArray,keys); 
 }
 
@@ -20,40 +20,119 @@ data = data.Businesses.filter(filterByMembership);
 return data;
 }
 
+function randomBusiness(array) {
+    let indexTracker = [];
+    let selections = 0;
+    while (selections < numberOfItems) {
+        let randomIndex = Math.floor(Math.random() * data.length);
+
+        if (!indexTracker.includes(randomIndex)) {
+            let li = document.createElement("li");
+            li.textContent = data[randomIndex];
+            document.querySelector("ul").appendChild(li);
+            selections++;
+            indexTracker.push(randomIndex);
+	}
+}
+}
+
 function displayLinkData(data,keys) {
-    console.log(filteredArray);
-    keys.forEach((key) => {
-            let li = document.createElement('li');
-            data[key].forEach(business => {
-            const span = document.createElement('span');
-            const p = document.createElement('p');
-            const p2 = document.createElement('p');
-            const p3 = document.createElement('p');
-            const image = document.createElement('img');
-            const p5 = document.createElement('p');
-            const p6 = document.createElement('p');
-            span.textContent = `${business.name}`;
-            p.textContent =  `Address: ${business.address}`;
-            p2.textContent = `Phone Number: ${business.phonenumber}`;
-            p3.textContent = `Website: ${business.url}`;
-            image.setAttribute('src', business.image);
-            image.setAttribute('alt', `${business.name} icon; original image url: ${business.image}`);
-            image.setAttribute('loading', 'lazy');
-            image.setAttribute('width', '75');
-            image.setAttribute('height', '20');
-            p5.textContent = `Membership Level: ${business.membershiplevel}`;
-            p6.textContent = `Other: ${business.other}`;
-            p6.setAttribute('class', 'last');
-            li.appendChild(image);
-            li.appendChild(span);
-            li.appendChild(p);
-            li.appendChild(p2);
-            li.appendChild(p3);
-            li.appendChild(p5);
-            li.appendChild(p6);
+    let indexTracker = [];
+    let selections = 0;
+    while (selections < numberOfItems) {
+        let randomIndex = Math.floor(Math.random() * data.length);
+        let randomIndex2 = Math.floor(Math.random() * data.length);
+        let randomIndex3 = Math.floor(Math.random() * data.length);
+        if (!indexTracker.includes(randomIndex)) {
+        keys.forEach(key => {
+                let li = document.createElement('li');
+                let li2 = document.createElement('li');
+                let li3 = document.createElement('li');
+                let span = document.createElement('span');
+                let span2 = document.createElement('span');
+                let span3 = document.createElement('span');
+                let p = document.createElement('p');
+                let p_2 = document.createElement('p');
+                let p_3 = document.createElement('p');
+                let p2 = document.createElement('p');
+                let p2_2 = document.createElement('p');
+                let p2_3 = document.createElement('p');
+                let p3 = document.createElement('p');
+                let p3_2 = document.createElement('p');
+                let p3_3 = document.createElement('p');
+                let image = document.createElement('img');
+                let image_2 = document.createElement('img');
+                let image_3 = document.createElement('img');
+                let p5 = document.createElement('p');
+                let p5_2 = document.createElement('p');
+                let p5_3 = document.createElement('p');
+                let p6 = document.createElement('p');
+                let p6_2 = document.createElement('p');
+                let p6_3 = document.createElement('p');
+                data.forEach(business => {
+                span.textContent = `${data[randomIndex].name}`;
+                span2.textContent = `${data[randomIndex2].name}`;
+                span3.textContent = `${data[randomIndex3].name}`;
+                p.textContent =  `Address: ${data[randomIndex].address}`;
+                p_2.textContent =  `Address: ${data[randomIndex2].address}`;
+                p_3.textContent =  `Address: ${data[randomIndex3].address}`;
+                p2.textContent = `Phone Number: ${data[randomIndex].phonenumber}`;
+                p2_2.textContent = `Phone Number: ${data[randomIndex2].phonenumber}`;
+                p2_3.textContent = `Phone Number: ${data[randomIndex3].phonenumber}`;
+                p3.textContent = `Website: ${data[randomIndex].url}`;
+                p3_2.textContent = `Website: ${data[randomIndex2].url}`;
+                p3_3.textContent = `Website: ${data[randomIndex3].url}`;
+                image.setAttribute('src', data[randomIndex].image);
+                image.setAttribute('alt', `${data[randomIndex].name} icon; original image url: ${data[randomIndex].image}`);
+                image.setAttribute('loading', 'lazy');
+                image.setAttribute('width', '75');
+                image.setAttribute('height', '20');
+                image_2.setAttribute('src', data[randomIndex2].image);
+                image_2.setAttribute('alt', `${data[randomIndex2].name} icon; original image url: ${data[randomIndex2].image}`);
+                image_2.setAttribute('loading', 'lazy');
+                image_2.setAttribute('width', '75');
+                image_2.setAttribute('height', '20');
+                image_3.setAttribute('src', data[randomIndex3].image);
+                image_3.setAttribute('alt', `${data[randomIndex3].name} icon; original image url: ${data[randomIndex3].image}`);
+                image_3.setAttribute('loading', 'lazy');
+                image_3.setAttribute('width', '75');
+                image_3.setAttribute('height', '20');
+                p5.textContent = `Membership Level: ${data[randomIndex].membershiplevel}`;
+                p5_2.textContent = `Membership Level: ${data[randomIndex2].membershiplevel}`;
+                p5_3.textContent = `Membership Level: ${data[randomIndex3].membershiplevel}`;
+                p6.textContent = `Other: ${data[randomIndex].other}`;
+                p6_2.textContent = `Other: ${data[randomIndex2].other}`;
+                p6_3.textContent = `Other: ${data[randomIndex3].other}`;
+                p6.setAttribute('class', 'last');
+                li.appendChild(image);
+                li.appendChild(span);
+                li.appendChild(p);
+                li.appendChild(p2);
+                li.appendChild(p3);
+                li.appendChild(p5);
+                li.appendChild(p6);
+                li2.appendChild(image_2);
+                li2.appendChild(span2);
+                li2.appendChild(p_2);
+                li2.appendChild(p2_2);
+                li2.appendChild(p3_2);
+                li2.appendChild(p5_2);
+                li2.appendChild(p6_2);
+                li3.appendChild(image_3);
+                li3.appendChild(span3);
+                li3.appendChild(p_3);
+                li3.appendChild(p2_3);
+                li3.appendChild(p3_3);
+                li3.appendChild(p5_3);
+                li3.appendChild(p6_3);
+                selections++;
+                indexTracker.push(randomIndex);
         });  
         cards.appendChild(li);
+        cards.appendChild(li2);
+        cards.appendChild(li3);
     });
+}}
 }
 
 getLinkData();
