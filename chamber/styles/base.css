@@ -236,12 +236,16 @@ html   {background-color: var(--page-background);}
         #weather img                           {background-color: skyblue;
                                                 width: 100px;}
         #weather figcaption                    {margin-left: 1rem;}
+        #weather .description                  {margin-left:1rem;
+                                                padding:0;}
         #weather .temp                         {border-width: 0;
                                                 color: #2B303A;
-                                                margin-left: 2rem;
+                                                margin-left: 2.5rem;
                                                 margin-top: 0.25rem;
+                                                padding:0;
                                                 text-align: center;
                                                 max-width: max-content;}
+        #weather #three-days-temp              {padding-bottom:2rem;}
 
 
         /*/ Footer /*/

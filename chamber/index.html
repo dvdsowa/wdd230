@@ -43,11 +43,11 @@
             <p id="navigation-date"></p>
         </nav>
         <section>
-            <img src="images/logowp.webp" alt="compass logo" id="header-logo" loading="lazy" width="85px" height="85px">
+            <img src="images/logowp.webp" alt="compass logo" id="header-logo" loading="lazy" width="85" height="85">
             <h1>Granbury Chamber Of Commerce</h1>
             <div class="social-media">
-                <img src="images/facebook-min.png" alt="facebook logo" id="header-facebook" loading="lazy" width="50px" height="50px">
-                <img src="images/instagram-min.png" alt="pinterest logo" id="header-pinterest" loading="lazy" width="50px" height="50px">
+                <img src="images/facebook-min.png" alt="facebook logo" id="header-facebook" loading="lazy" width="50" height="50">
+                <img src="images/instagram-min.png" alt="pinterest logo" id="header-pinterest" loading="lazy" width="50" height="50">
             </div>
         </section>
     </header>
@@ -61,7 +61,7 @@
                 <p id="greeting">Welcome to Granbury</p>
                 <button id="joinBtn" onclick="window.location.href='https://dvdsowa.github.io/wdd230/chamber/join.html';">Join our Chamber</button>
             </figcaption>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Granbury_June_2018_35_%28Hood_County_Courthouse%29.jpg" alt="Granbury courthouse" loading="lazy" width="342px" height="244.667px">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Granbury_June_2018_35_%28Hood_County_Courthouse%29.jpg" alt="Granbury courthouse" loading="lazy" width="342" height="245">
         </figure>
         <div title="news" id="news">
             <h2>Granbury ChoC 100-year Anniversary</h2>
@@ -70,47 +70,53 @@
             </p>
         </div>
 
-        <section title="business-highlights" id="business-highlights">
-            <div>
-                <h2>Highlights</h2>
-                <ul class="no-bullets" id="cards"></ul>
-            </div>
-        </section>
+        <div title="business-highlights" id="business-highlights">
+            <h2>Highlights</h2>
+            <ul class="no-bullets" id="cards"></ul>
+        </div>
 
         <div title="raffle" id="raffle">
             <h2>Local Gift Card Raffle</h2>
-            <img src="images/qr-code-min.png" alt="qr code" loading="lazy" width="100px" height="100px">
+            <img src="images/qr-code-min.png" alt="qr code" loading="lazy" width="100" height="100">
             <p>On November 17, we will be holding a raffle. The 1st, 2nd and 3rd place winners will $500,
                 $300 and $150 prizes respectively. It will be hosted at 4th Street Tavern, 357 4th Street.
             </p>
         </div>
 
         <div title="weather" id="weather">
-            <h2>Weather</h2>
-            <h4 class="weather-descriptor">TODAY</h4>
-                <img id="weather-icon" src="" alt="" loading="lazy" width="100px" height="100px">
-                <figcaption id="description"></figcaption>
-                <div id="current-temp" class="temp"></div>
-            <h4 class="weather-descriptor">TOMMOROW</h4> 
-                <img id="weather-icon-two" src="" alt="" loading="lazy" width="100px" height="100px"> 
-                <figcaption id="description-two"></figcaption>
-                <div id="tommorow-temp" class="temp"></div> 
+            <h2 id="weather-heading">Weather</h2>
+            <section id="today">
+                <h4 class="weather-descriptor">TODAY</h4>
+                <img id="weather-icon" src="*" alt="*" loading="lazy" width="100" height="100">
+                <p id="description" class="description"></p>
+                <p id="current-temp" class="temp"></p>
+            </section>
+            <section id="tomorrow">
+            <h4 class="weather-descriptor">TOMORROW</h4> 
+                <img id="weather-icon-two" src="*" alt="*" loading="lazy" width="100" height="100"> 
+                <p id="description-two" class="description"></p>
+                <p id="tomorrow-temp" class="temp"></p>
+            </section>
+            <section id="two-days">     
             <h4 class="weather-descriptor">1 DAY AFTER</h4> 
-                <img id="weather-icon-three" src="" alt="" loading="lazy" width="100px" height="100px"> 
-                <figcaption id="description-three"></figcaption>
-                <div id="two-days-temp" class="temp"></div>
+                <img id="weather-icon-three" src="*" alt="*" loading="lazy" width="100" height="100"> 
+                <p id="description-three" class="description"></p>
+                <p id="two-days-temp" class="temp"></p>
+            </section>
+            <section id="three-days"> 
             <h4 class="weather-descriptor">2 DAYS AFTER</h4> 
-                <img id="weather-icon-four" src="" alt="" loading="lazy" width="100px" height="100px">
-                <figcaption id="description-four"></figcaption> 
-                <div id="three-days-temp" class="temp"></div>
+                <img id="weather-icon-four" src="*" alt="*" loading="lazy" width="100" height="100">
+                <p id="description-four" class="description"></p> 
+                <p id="three-days-temp" class="temp"></p>
+            </section>
         </div>
     </main>
     
     <footer>
         <div>
-            <img src="images/logowp.webp" alt="compass logo" id="footer-logo" loading="lazy" width="125px" height="125px">
+            <img src="images/logowp.webp" alt="compass logo" id="footer-logo" loading="lazy" width="125" height="125">
             <h3>Granbury Chamber of Commerce</h3>
-            <p class="address"><em>100 Main Street, Granbury, Texas, 76048</em><br class="normal">info@granburychoc.org<br>+(123) 555-6789<br><img src="images/location-min.png" alt="pin icon" id="footer-pin" loading="lazy" width="14px" height="14px"> Location Map</p>
+            <p class="address"><em>100 Main Street, Granbury, Texas, 76048</em><br class="normal">info@granburychoc.org<br>+(123) 555-6789<br><img src="images/location-min.png" alt="pin icon" id="footer-pin" loading="lazy" width="14" height="14"> Location Map</p>
         </div>
         <p id="footer-bottom">&copy; <span id="copyrightyear"></span> &bull; <span id="author">David Sowa</span> &bull; WDD 230 Project &bull; <span id="update"></span></p>
     </footer>

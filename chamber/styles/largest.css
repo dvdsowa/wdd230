@@ -26,6 +26,21 @@
         main figure figcaption p        {font-size: 2.5em;}
         main figure figcaption button   {font-size: 1.5em;}
         main div                        {font-size: 1.2em;}
+        #weather                        {display: grid;
+                                         grid-template-columns: 200px 200px 200px 1fr;
+                                         grid-template-rows: 41px 1fr;
+                                         padding-bottom: 20.7168px;} 
+        #weather-heading                {grid-column: 1; 
+                                         grid-row: 1;}
+        #weather .temp                  {margin-top:0;}
+        #today                          {grid-column: 1; 
+                                         grid-row: 2;}
+        #tomorrow                       {grid-column: 2; 
+                                         grid-row: 2;}
+        #two-days                       {grid-column: 3; 
+                                         grid-row: 2;}
+        #three-days                     {grid-column: 4; 
+                                         grid-row: 2;}
         
         /*/ Footer /*/
         footer                          {font-size: 1.1em;}

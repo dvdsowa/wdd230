@@ -1,6 +1,6 @@
 // select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
-const tommorow = document.querySelector('#tommorow-temp');
+const tomorrow = document.querySelector('#tomorrow-temp');
 const twoDays = document.querySelector('#two-days-temp');
 const threeDays = document.querySelector('#three-days-temp');
 
@@ -61,7 +61,7 @@ async function apiFetch2() {
 } 
 
 function displayResults2(data) {
-  tommorow.innerHTML = `${data.list[0].main.temp}&deg;F`;
+  tomorrow.innerHTML = `${data.list[0].main.temp}&deg;F`;
   twoDays.innerHTML = `${data.list[8].main.temp}&deg;F`;
   threeDays.innerHTML = `${data.list[16].main.temp}&deg;F`;
 

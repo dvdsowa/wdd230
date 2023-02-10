@@ -9,7 +9,6 @@ async function getLinkData() {
 
 function displayLinkData(data,keys) {
     keys.forEach((key) => {
-        const section = document.createElement('section');
         const li = document.createElement('li');
         data[key].forEach(business => {
             const span = document.createElement('span');
@@ -40,9 +39,8 @@ function displayLinkData(data,keys) {
             li.appendChild(p3);
             li.appendChild(p5);
             li.appendChild(p6);
-            section.appendChild(li);
         });  
-        cards.appendChild(section);
+        cards.appendChild(li);
     });
 }
 
