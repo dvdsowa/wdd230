@@ -83,11 +83,14 @@ html   {background-color: var(--page-background);}
         nav ul li a:hover                      {background-color: rgba(0,0,0,0.3);}       /* Move this below the active class for the products block to change color when hovered over*/
         nav ul.open                            {display: block;}
         #header-facebook                       {border-radius: 100%;
+                                                height: auto;
                                                 width: 50px;}
         #header-logo                           {grid-column: 1;
+                                                height: auto;
                                                 margin: auto;
                                                 width: 85px;}
         #header-pinterest                      {border-radius: 100%;
+                                                height: auto;
                                                 width: 50px;}
         #navigation-date                       {border-color: rgba(55,91,88,0.7);
                                                 border-style: solid;
@@ -115,7 +118,7 @@ html   {background-color: var(--page-background);}
                                                 font-size: 1.3em;}
         main h3                                {color: var(--subtitle-color-on-color);
                                                 font-family: var(--heading-font);}
-        #navigation-date                       {margin-left: 1rem;}
+        #navigation-date                       {margin-left: 0;}
           /* hover effect */
           .hover:hover                         {box-shadow: 0 0 50px #333;}
 
@@ -136,5 +139,7 @@ html   {background-color: var(--page-background);}
                                                 font-size: 0.8em;
                                                 font-family: sans-serif;
                                                 text-align: center;}
-        #footer-logo                           {width: 125px;}
-        #footer-pin                            {width: 14px;}
+        #footer-logo                           {height: auto;
+                                                width: 125px;}
+        #footer-pin                            {height: auto;
+                                                width: 14px;}

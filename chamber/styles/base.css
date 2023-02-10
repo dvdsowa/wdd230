@@ -83,11 +83,14 @@ html   {background-color: var(--page-background);}
         nav ul li a:hover                      {background-color: rgba(0,0,0,0.3);}       /* Move this below the active class for the products block to change color when hovered over*/
         nav ul.open                            {display: block;}
         #header-facebook                       {border-radius: 100%;
+                                                height: auto;
                                                 width: 50px;}
         #header-logo                           {grid-column: 1;
+                                                height: auto;
                                                 margin: auto;
                                                 width: 85px;}
         #header-pinterest                      {border-radius: 100%;
+                                                height: auto;
                                                 width: 50px;}
         #navigation-date                       {border-color: rgba(55,91,88,0.7);
                                                 border-style: solid;
@@ -152,10 +155,11 @@ html   {background-color: var(--page-background);}
                                                 margin-right: 1rem;}
         main div img                           {margin-left: 1rem;}
         main figure                            {display: grid;}
-        main figure img                        {width: 100%;
-                                                border-radius: 25px;
+        main figure img                        {border-radius: 25px;
                                                 grid-row: 1;
-                                                grid-column: 1;}
+                                                grid-column: 1;
+                                                height: auto;
+                                                width: 100%;}
         main figure figcaption                 {grid-column: 1;
                                                 grid-row: 1;
                                                 margin-top: auto;
@@ -226,6 +230,7 @@ html   {background-color: var(--page-background);}
                                                 font-weight: 700;}
         .no-bullets                            {list-style: none;}
         #raffle img                            {background-color: #eee;
+                                                height: auto;
                                                 width: 100px;}
         #thanks                                {text-align: center;}   
         #weather img                           {background-color: skyblue;
@@ -256,5 +261,7 @@ html   {background-color: var(--page-background);}
                                                 font-size: 0.8em;
                                                 font-family: sans-serif;
                                                 text-align: center;}
-        #footer-logo                           {width: 125px;}
-        #footer-pin                            {width: 14px;}
+        #footer-logo                           {height:auto;
+                                                width: 125px;}
+        #footer-pin                            {height:auto;
+                                                width: 14px;}
