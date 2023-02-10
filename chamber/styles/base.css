@@ -230,7 +230,7 @@ html   {background-color: var(--page-background);}
         #thanks                                {text-align: center;}   
         #weather img                           {background-color: skyblue;
                                                 width: 100px;}
-        #weather figcaption                    {margin-left: 2rem;}
+        #weather figcaption                    {margin-left: 1rem;}
         #weather .temp                         {border-width: 0;
                                                 color: #2B303A;
                                                 margin-left: 2rem;
