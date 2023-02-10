@@ -11,7 +11,7 @@ async function getLinkData() {
 }
 
 function displayLinkData(data,keys) {
-    let filteredArray = data.filter((item) => item[key].membershiplevel.includes("gold" || "silver"));
+    let filteredArray = data.filter((item) => item.membershiplevel.includes("gold" || "silver"));
     keys.forEach((key) => {
         //let indexTracker = [];
         //let selections = 0;
