@@ -49,11 +49,11 @@ function displayRandomLinkData(data,keys) {
     let selections = 0;
     while (selections < numberOfItems) {
         let randomIndex = generateUniqueRandom(data.length-1);
-        console.log(randomIndex)
+        //console.log(randomIndex)
         let randomIndex2 = generateUniqueRandom(data.length-1);
-        console.log(randomIndex2)
+        //console.log(randomIndex2)
         let randomIndex3 = generateUniqueRandom(data.length-1);
-        console.log(randomIndex3)
+        //console.log(randomIndex3)
         if (!indexTracker.includes(randomIndex) && !indexTracker.includes(randomIndex2) && !indexTracker.includes(randomIndex3)) {
         keys.forEach(key => {
                 let li = document.createElement('li');
