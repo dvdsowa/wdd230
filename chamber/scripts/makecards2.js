@@ -1,50 +1,7 @@
 const cards = document.querySelector('#cards');
 //
-const numberOfItems = 5;
+const numberOfItems = 3;
 
-let myArray = [
-	"apple",
-	"banana",
-	"cherry",
-	"date",
-	"elderberry",
-	"fig",
-	"grape",
-	"honeydew",
-	"ice cream",
-	"jelly",
-	"kiwi",
-	"lemon",
-	"mango",
-	"nectarine",
-	"orange",
-	"pear",
-	"quince",
-	"raspberry",
-	"strawberry",
-	"tangerine",
-	"ugli fruit",
-	"vanilla",
-	"watermelon",
-	"xigua",
-	"yam",
-	"zucchini"
-];
-// going to filter the array for entries that contain the letter 'a'
-let selectArray = myArray.filter((item) => item.includes("a"));
-let indexTracker = [];
-let selections = 0;
-while (selections < NUMOFITEMS) {
-	let randomIndex = Math.floor(Math.random() * selectArray.length);
-
-	if (!indexTracker.includes(randomIndex)) {
-		let li = document.createElement("li");
-		li.textContent = selectArray[randomIndex];
-		document.querySelector("ul").appendChild(li);
-		selections++;
-		indexTracker.push(randomIndex);
-	}
-}
 //
 async function getLinkData() {
     const response = await fetch("https://dvdsowa.github.io/wdd230/chamber/data/members.json");
@@ -54,9 +11,15 @@ async function getLinkData() {
 }
 
 function displayLinkData(data,keys) {
+    let filteredArray = data.filter((item) => item[key].membershiplevel.includes("gold" || "silver"));
     keys.forEach((key) => {
-        const li = document.createElement('li');
-        data[key].forEach(business => {
+        //let indexTracker = [];
+        //let selections = 0;
+        //while (selections < numberOfItems) {
+            //let randomIndex = Math.floor(Math.random() * filteredArray.length);
+            //if (!indexTracker.includes(randomIndex)) {
+            let li = document.createElement('li');
+            data[key].forEach(business => {
             const span = document.createElement('span');
             const p = document.createElement('p');
             const p2 = document.createElement('p');
@@ -85,8 +48,11 @@ function displayLinkData(data,keys) {
             li.appendChild(p3);
             li.appendChild(p5);
             li.appendChild(p6);
+            //selections++;
+		    //indexTracker.push(randomIndex)
         });  
         cards.appendChild(li);
+    //}}
     });
 }
 
