@@ -1,6 +1,7 @@
 const cards = document.querySelector('#cards');
 //
 const numberOfItems = 3;
+const containedNumbers = [];
 
 //
 async function getLinkData() {
@@ -9,7 +10,7 @@ async function getLinkData() {
     keys = Object.keys(data);
     filteredArray = transform(data);
     //console.log(filteredArray);
-    displayLinkData(filteredArray,keys); 
+    displayRandomLinkData(filteredArray,keys); 
 }
 
 function transform(data) {
@@ -20,30 +21,40 @@ data = data.Businesses.filter(filterByMembership);
 return data;
 }
 
-function randomBusiness(array) {
+function generateUniqueRandom(maxNr) {
+    //Generate random number
+    let random = (Math.random() * maxNr).toFixed();
+
+    //Coerce to number by boxing
+    random = Number(random);
+
+    if(!containedNumbers.includes(random)) {
+        containedNumbers.push(random);
+        return random;
+    } else {
+        if(containedNumbers.length < maxNr) {
+          //Recursively generate number
+         return  generateUniqueRandom(maxNr);
+        } else {
+          console.log('No more numbers available.')
+          return false;
+        }
+    }
+}
+
+
+
+function displayRandomLinkData(data,keys) {
     let indexTracker = [];
     let selections = 0;
     while (selections < numberOfItems) {
-        let randomIndex = Math.floor(Math.random() * data.length);
-
-        if (!indexTracker.includes(randomIndex)) {
-            let li = document.createElement("li");
-            li.textContent = data[randomIndex];
-            document.querySelector("ul").appendChild(li);
-            selections++;
-            indexTracker.push(randomIndex);
-	}
-}
-}
-
-function displayLinkData(data,keys) {
-    let indexTracker = [];
-    let selections = 0;
-    while (selections < numberOfItems) {
-        let randomIndex = Math.floor(Math.random() * data.length);
-        let randomIndex2 = Math.floor(Math.random() * data.length);
-        let randomIndex3 = Math.floor(Math.random() * data.length);
-        if (!indexTracker.includes(randomIndex)) {
+        let randomIndex = generateUniqueRandom(data.length-1);
+        console.log(randomIndex)
+        let randomIndex2 = generateUniqueRandom(data.length-1);
+        console.log(randomIndex2)
+        let randomIndex3 = generateUniqueRandom(data.length-1);
+        console.log(randomIndex3)
+        if (!indexTracker.includes(randomIndex) && !indexTracker.includes(randomIndex2) && !indexTracker.includes(randomIndex3)) {
         keys.forEach(key => {
                 let li = document.createElement('li');
                 let li2 = document.createElement('li');
