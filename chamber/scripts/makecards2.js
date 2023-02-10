@@ -14,13 +14,14 @@ async function getLinkData() {
 
 function transform(data) {
     function filterByMembership(record) {
-    return record.membershiplevel.includes('Gold'||'Silver');
+    return record.membershiplevel.includes('Gold') || record.membershiplevel.includes('Silver');
 } 
 data = data.Businesses.filter(filterByMembership);
 return data;
 }
 
 function displayLinkData(data,keys) {
+    console.log(filteredArray);
     keys.forEach((key) => {
             let li = document.createElement('li');
             data[key].forEach(business => {
