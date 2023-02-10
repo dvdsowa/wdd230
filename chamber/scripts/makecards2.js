@@ -7,17 +7,21 @@ async function getLinkData() {
     const response = await fetch("https://dvdsowa.github.io/wdd230/chamber/data/members.json");
     const data = await response.json();
     keys = Object.keys(data);
-    displayLinkData(data,keys); 
+    filteredArray = transform(data);
+    console.log(filteredArray);
+    displayLinkData(filteredArray,keys); 
+}
+
+function transform(data) {
+    function filterByMembership(record) {
+    return record.membershiplevel.includes('Gold'||'Silver');
+} 
+data = data.Businesses.filter(filterByMembership);
+return data;
 }
 
 function displayLinkData(data,keys) {
-    let filteredArray = data.filter((item) => item.membershiplevel.includes("gold" || "silver"));
     keys.forEach((key) => {
-        //let indexTracker = [];
-        //let selections = 0;
-        //while (selections < numberOfItems) {
-            //let randomIndex = Math.floor(Math.random() * filteredArray.length);
-            //if (!indexTracker.includes(randomIndex)) {
             let li = document.createElement('li');
             data[key].forEach(business => {
             const span = document.createElement('span');
@@ -27,8 +31,6 @@ function displayLinkData(data,keys) {
             const image = document.createElement('img');
             const p5 = document.createElement('p');
             const p6 = document.createElement('p');
-            //a.setAttribute('href', activity.link);
-            //a.setAttribute('target', '_blank');
             span.textContent = `${business.name}`;
             p.textContent =  `Address: ${business.address}`;
             p2.textContent = `Phone Number: ${business.phonenumber}`;
@@ -48,11 +50,8 @@ function displayLinkData(data,keys) {
             li.appendChild(p3);
             li.appendChild(p5);
             li.appendChild(p6);
-            //selections++;
-		    //indexTracker.push(randomIndex)
         });  
         cards.appendChild(li);
-    //}}
     });
 }
 

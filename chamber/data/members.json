@@ -28,7 +28,7 @@
                      "phonenumber" : "(682) 205-3407",
                      "url" : "https://printonegranbury.com/",
                      "image" : "//dvdsowa.github.io/wdd230/chamber/images/PrintOne.webp",
-                     "membershiplevel" : "Non-Profit",
+                     "membershiplevel" : "Gold",
                      "other" : "Offers printing and design services"},     
 
                   {  "name": "Sign Gypsies - Granbury", 
@@ -52,6 +52,6 @@
                      "phonenumber" : "(817) 964-2212",
                      "url" : "https://www.hoodcountylivestockraisersassociation.org/",
                      "image" : "//dvdsowa.github.io/wdd230/chamber/images/HoodCountyLivestockRaisersAssociation.webp",
-                     "membershiplevel" : "Non-Profit",
+                     "membershiplevel" : "Silver",
                      "other" : "Promotoes agricultural education and development in Hood County. Hours are irregular."}]
 }
