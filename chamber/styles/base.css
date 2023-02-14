@@ -220,6 +220,7 @@ html   {background-color: var(--page-background);}
         .last                                  {margin-bottom: 0.25rem;}
         .list                                  {display: flex;
                                                 flex-direction: column;}
+        #membership                            {padding-bottom: 2.25rem;}
         .menu                                  {margin: 1rem auto;
                                                 border: 1px solid rgba(0, 0, 0, 0.1);
                                                 padding: 0.5rem;
@@ -232,6 +233,7 @@ html   {background-color: var(--page-background);}
         #raffle img                            {background-color: #eee;
                                                 height: auto;
                                                 width: 100px;}
+        #sbs8                                  {height: fit-content;}
         #thanks                                {text-align: center;}   
         #weather img                           {background-color: skyblue;
                                                 width: 100px;}
