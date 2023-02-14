@@ -239,7 +239,7 @@ html   {background-color: var(--page-background);}
         #weather .description                  {margin-left:1rem;
                                                 padding:0;}
         #weather .temp                         {border-width: 0;
-                                                color: #2B303A;
+                                                color: #ffffff;
                                                 margin-left: 2.5rem;
                                                 margin-top: 0.25rem;
                                                 padding:0;
