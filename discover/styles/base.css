@@ -138,6 +138,7 @@ html   {background-color: var(--page-background);}
                                                 padding: 1rem;
                                                 font-size: 0.8em;
                                                 font-family: sans-serif;
+                                                margin-left: 0;
                                                 text-align: center;}
         #footer-logo                           {height: auto;
                                                 width: 125px;}
