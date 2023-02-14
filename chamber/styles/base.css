@@ -161,10 +161,9 @@ html   {background-color: var(--page-background);}
                                                 height: auto;
                                                 width: 100%;}
         main figure figcaption                 {grid-column: 1;
-                                                grid-row: 1;
+                                                grid-row: 2;
                                                 margin-top: auto;
-                                                margin-bottom: auto;
-                                                position: relative;}
+                                                margin-bottom: auto;}
         main figure figcaption button          {background-color: rgba(106,82,124,1);
                                                 border-color: var(--primary-color);
                                                 border-radius: 5px;
@@ -211,6 +210,25 @@ html   {background-color: var(--page-background);}
                                                 margin: auto;
                                                 padding: 0.5rem;
                                                 width: max-content;}
+        .discover                              {padding:0;}
+        .discover div                          {padding: 1rem;}
+        .discover div h2, h3                   {margin-left: 2.5rem;}
+        .discover p                            {margin-left: 2.5rem; padding: 0;}
+        .discover h2                           {color: var(--subtitle-color-on-color);
+                                                font-family: var(--heading-font);
+                                                font-size: 1.3em;}
+        .discover h3                           {color: var(--subtitle-color-on-color);
+                                                font-family: var(--heading-font);}
+        .discover figure                       {flex-direction: column;
+                                                padding: 1rem;}
+        .discover figure img                   {border-radius: 25px;
+                                                margin: auto;
+                                                width: 100%;
+                                                height: auto;}
+        .discover figure figcaption            {font-family: "Arial", sans-serif;
+                                                margin: auto;
+                                                padding-top: 1rem;
+                                                position: static;}
         #ftop                                  {padding-bottom: 2rem;}
         #fbottom                               {padding-bottom: 1rem;}
         .grid                                  {display: grid;
@@ -229,11 +247,15 @@ html   {background-color: var(--page-background);}
                                                 width: 250px;}
         .menu button                           {padding: 1rem;
                                                 font-weight: 700;}
+        #navigation-date                       {margin-left: 0;}
         .no-bullets                            {list-style: none;}
         #raffle img                            {background-color: #eee;
                                                 height: auto;
                                                 width: 100px;}
         #sbs8                                  {height: fit-content;}
+        .sidebar                               {border:none;
+                                                border-radius: 0;
+                                                margin:0;}
         #thanks                                {text-align: center;}   
         #weather img                           {background-color: skyblue;
                                                 width: 100px;}
@@ -248,6 +270,8 @@ html   {background-color: var(--page-background);}
                                                 text-align: center;
                                                 max-width: max-content;}
         #weather #three-days-temp              {padding-bottom:2rem;}
+          /* hover effect */
+          .hover:hover                         {box-shadow: 0 0 50px #333;}
 
 
         /*/ Footer /*/
