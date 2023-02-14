@@ -19,7 +19,7 @@ thedatefooter.innerHTML = `Updated ${lastmodification}`;
 
 if (banner) {
 if (day == 'Monday' || day == 'Tuesday' || day == 'Wednesday') {
-    banner.style.display = "none";
+    banner.style.display = "block";
     banner.innerHTML = `🤝🏼 Attend our meet-and-greet Wednesday at 7:00 p.m.`;
 } else {
     banner.style.display = "none";
