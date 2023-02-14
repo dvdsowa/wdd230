@@ -10,13 +10,14 @@
 
         /*/ Header /*/
         header h1                       {font-size: 2.6em;}
+        header section                  {padding: 1rem;}
         nav button                      {display: none}
         nav ul#primaryNav               {display: flex;
                                          justify-content: center;}   
         nav ul li a                     {border: none;
                                          border-right: 1px solid rgba(0,0,0,0.3);}
         #header-facebook                {width: 60px;}
-        #header-logo                    {width: 115px;}
+        #header-logo                    {width: 105px;}
         #header-pinterest               {width: 60px;}
         #navigation-date                {font-size: 1.15em;}
         #primaryNav                     {font-size: 1.15em;}
