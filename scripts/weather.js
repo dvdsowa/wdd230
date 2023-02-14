@@ -1,7 +1,7 @@
 // select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const captionDesc = document.querySelector('#description');
 const url = '//api.openweathermap.org/data/2.5/weather?q=Simsbury&units=imperial&appid=92a60fb4b1b63b23d2314a50d145deae';
 
 async function apiFetch() {
